@@ -9,11 +9,9 @@
 ## OptionalDeps: Ace3, Expo, LibSharedMedia-3.0 
 
 ## X-Embeds: Ace3, LibSharedMedia-3.0
-## X-eMail: alastair@ominous.me.uk
-## X-Website: http://www.wowace.com/wiki/ClassTimer
+## X-Website: http://www.wowace.com/projects/classtimer/
 ## X-Credits: Nymbia
 ## X-Category: Combat
-## X-AceForum: 6052
 ## X-RelSite-Curse: 7992
 
 embeds.xml
