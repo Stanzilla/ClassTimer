@@ -1,11 +1,11 @@
-## Interface: 20400
+## Interface: 30000
 ## Title: ClassTimer
 ## Notes: Timers for Buffs, DOTs, CC effects, etc..
 ## Notes-zhCN: 职业技能计时计
 ## Notes-zhTW: 職業技能計時計
 ## Author: Ominous
 ## SavedVariables: ClassTimerDB
-## Version: 2.0
+## Version: 2.1
 ## OptionalDeps: Ace3, Expo, LibSharedMedia-3.0 
 
 ## X-Embeds: Ace3, LibSharedMedia-3.0
