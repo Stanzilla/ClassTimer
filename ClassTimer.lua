@@ -331,7 +331,7 @@ end
 
 do
 	local function sortup(a,b)
-			return a.remaining > b.remaining
+			return  a.remaining > b.remaining
 	end
 	local function sort(a,b)
 			return a.remaining < b.remaining
@@ -358,28 +358,29 @@ do
 		local currentTime = GetTime()
 		if db.buffs then
 			for i = 1, 32 do
-				local name, _, texture, count, duration, remaining = UnitBuff(unit, i)
+				local name, _, texture, count, _, duration, endTime, isMine = UnitBuff(unit, i)
 				if not name then
 					break
 				end
-				if duration and duration > 0 and self.db.profile.Abilities[name] then
+				if duration and duration > 0 and self.db.profile.Abilities[name] and isMine then
 					local t = new()
 					if self.db.profile.Units.sticky.enable and self.db.profile.Sticky[name] then
-						t.startTime = (currentTime - duration + remaining)
-						t.endTime = (currentTime + remaining)
+						t.startTime = endTime - duration
+						t.endTime = endTime
 						stickyset = true
 						t.unitname = UnitName(unit)
 						number = sticky[name..t.unitname] or #sticky+1
 						sticky[number] = t
 						sticky[name..t.unitname] = number
-					else
+					elseif isMine then
 						tmp[#tmp+1] = t
 					end
 					t.name = name
 					t.unit = unit
+					t.remaining = endTime-currentTime
 					t.texture = texture
 					t.duration = duration
-					t.remaining = remaining
+					t.endTime = endTime
 					t.count = count
 					t.isbuff = true
 				end
@@ -387,30 +388,31 @@ do
 		end
 		if db.debuffs then
 			for i = 1, 40 do
-				local name, _, texture, count, dispelType, duration, remaining = UnitDebuff(unit, i)
+				local name, _, texture, count, debuffType, duration, endTime, isMine = UnitDebuff(unit, i)
 				if not name then
 					break
 				end
 				if duration and duration > 0 and self.db.profile.Abilities[name] then
 					local t = new()
-					if self.db.profile.Units.sticky.enable and self.db.profile.Sticky[name] then
-						t.startTime = (currentTime - duration + remaining)
-						t.endTime = (currentTime + remaining)
+					if self.db.profile.Units.sticky.enable and self.db.profile.Sticky[name] and isMine then
+						t.startTime = endTime - duration
+						t.endTime = endTime
 						stickyset = true
 						t.unitname = UnitName(unit)
 						number = sticky[name..t.unitname] or #sticky+1
 						sticky[number] = t
 						sticky[name..t.unitname] = number
-					else
+					elseif isMine then
 						tmp[#tmp+1] = t
 					end
 					t.name = name
 					t.unit = unit
 					t.texture = texture
 					t.duration = duration
-					t.remaining = remaining
+					t.remaining = endTime-currentTime
+					t.endTime = endTime
 					t.count = count
-					t.dispelType = dispelType
+					t.dispelType = debuffType
 				end
 			end
 		end
@@ -452,8 +454,7 @@ do
 				
 				bar.text:SetText(text(db.bartext, v.name, v.count, v.unit))
 				bar.icon:SetTexture(v.texture)
-				local elapsed = (v.duration - v.remaining)
-				local startTime, endTime = (currentTime - elapsed), (currentTime + v.remaining)
+				local startTime, endTime = v.endTime - v.duration, v.endTime
 				bar.startTime = startTime
 				bar.unit = unit
 				bar.duration = v.duration
