@@ -6,8 +6,9 @@ function ClassTimer:CreateTimers()
 return {
 	Buffs = {
 		GetSpellInfo(27811), --Blessed Recovery
-		GetSpellInfo(2651), --Elune's Grace
-		GetSpellInfo(13896), --Feedback
+		GetSpellInfo(47585), --Dispersion
+		--GetSpellInfo(2651), -Elune's Grace (removed in WotLK)
+		--GetSpellInfo(13896), -Feedback (removed in WotLK)
 		GetSpellInfo(14892), -- Inspiration
 		GetSpellInfo(14531), -- Martyrdom
 		GetSpellInfo(33206), -- Pain Suppression
@@ -18,11 +19,11 @@ return {
 	},
 	DOTs = {
 		GetSpellInfo(2944), -- Devouring Plague
-		GetSpellInfo(9035), -- Hex of Weakness"
+		--GetSpellInfo(9035), -Hex of Weakness (removed in WotLK)
 		GetSpellInfo(33076), -- Prayer of Mending
 		GetSpellInfo(589), -- Shadow Word: Pain
 		GetSpellInfo(15487), -- Silence
-		GetSpellInfo(2652), -- Touch of Weakness
+		--GetSpellInfo(2652),  -Touch of Weakness (removed in WotLK)
 		GetSpellInfo(15286), -- Vampiric Embrace
 		(GetSpellInfo(34914)), -- Vampiric Touch --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
