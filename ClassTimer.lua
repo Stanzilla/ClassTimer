@@ -357,7 +357,8 @@ do
 	function ClassTimer:GetBuffs(unit, db)
 		local currentTime = GetTime()
 		if db.buffs then
-			for i = 1, 32 do
+			local i=1
+			while true do
 				local name, _, texture, count, _, duration, endTime, isMine = UnitBuff(unit, i)
 				if not name then
 					break
@@ -384,10 +385,12 @@ do
 					t.count = count
 					t.isbuff = true
 				end
+				i=i+1
 			end
 		end
 		if db.debuffs then
-			for i = 1, 40 do
+			local i=1
+			while true do
 				local name, _, texture, count, debuffType, duration, endTime, isMine = UnitDebuff(unit, i)
 				if not name then
 					break
@@ -414,6 +417,7 @@ do
 					t.count = count
 					t.dispelType = debuffType
 				end
+				i=i+1
 			end
 		end
 	end
