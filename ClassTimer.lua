@@ -392,7 +392,7 @@ do
 				if not name then
 					break
 				end
-				if duration and duration > 0 and self.db.profile.Abilities[name] then
+				if duration and duration > 0 and self.db.profile.Abilities[name] and isMine then
 					local t = new()
 					if self.db.profile.Units.sticky.enable and self.db.profile.Sticky[name] and isMine then
 						t.startTime = endTime - duration
