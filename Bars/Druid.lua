@@ -20,6 +20,7 @@ return {
 		(GetSpellInfo(8921)), -- Moonfire --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Feral = {
+		GetSpellInfo(50322), --Survival Instincts
 		GetSpellInfo(52610), -- Savage Roar
 		GetSpellInfo(5211), -- Bash
 		GetSpellInfo(5211), -- Dash
