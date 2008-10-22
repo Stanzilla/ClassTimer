@@ -10,6 +10,7 @@ return {
 		GetSpellInfo(2120), -- Flamestrike
 		GetSpellInfo(11119), -- Ignite
 		GetSpellInfo(11366), -- Pyroblast
+        GetSpellInfo(44457), --Living Bomb
 		(GetSpellInfo(11180)), -- Winter's Chill --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {
