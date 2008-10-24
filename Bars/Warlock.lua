@@ -32,6 +32,7 @@ return {
 	Misc = {
 		GetSpellInfo(18288), -- Amplify Curse
 		GetSpellInfo(710), -- Banish
+		GetSpellInfo(48184), --Haunt
 		GetSpellInfo(6789), -- Death Coil
 		GetSpellInfo(5782), -- Fear
 		GetSpellInfo(5484), -- Howl of Terror
