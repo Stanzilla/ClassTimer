@@ -27,6 +27,8 @@ return {
 	},
 	Talents = {
 		GetSpellInfo(12042), -- Arcane Power
+		GetSpellInfo(12472), --Icy Veins
+		GetSpellInfo(48108), --Hot Streak
 		(GetSpellInfo(11255)), -- Improved Counterspell --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Misc = {
