@@ -118,6 +118,7 @@ L['Magic'] = true
 L['Disease'] = true
 L['Normal'] = true
 L['Extras'] = true
+L['Shields'] = true
 
 --Units 
 L['target'] = true

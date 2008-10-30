@@ -24,11 +24,13 @@ return {
 		GetSpellInfo(642), -- Divine Shield
 		GetSpellInfo(20177), -- Reckoning
 		GetSpellInfo(25780), -- Righteous Fury
+		GetSpellInfo(53486), --The Art of War
 		(GetSpellInfo(20925)), -- Holy Shield --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Judgements = {
 		GetSpellInfo(53407), -- Judgement of Justice
 		GetSpellInfo(20271), -- Judgement of Light
+		GetSpellInfo(53671), --Judgements of the Pure
 		(GetSpellInfo(53408)), -- Judgement of Wisdom --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Seals = {
@@ -50,6 +52,7 @@ return {
 		GetSpellInfo(31935), -- Avenger's Shield
 		GetSpellInfo(26573), -- Consecration
 		GetSpellInfo(31842), -- Divine Illumination
+		GetSpellInfo(53563), --Beacon of Light
 		GetSpellInfo(31833), -- Light's Grace
 		GetSpellInfo(53672), -- Infusion of Light
 		GetSpellInfo(20127), -- Redoubt

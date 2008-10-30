@@ -43,6 +43,7 @@ return {
 		GetSpellInfo(33831), -- Force of Nature
 		GetSpellInfo(33878), -- Mangle (Bear)
 		GetSpellInfo(33876), -- Mangle (Cat)
+		GetSpellInfo(48438), --Wild Growth
 		(GetSpellInfo(16689)), -- Nature's Grasp --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Misc = {

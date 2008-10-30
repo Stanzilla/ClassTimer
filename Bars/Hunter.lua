@@ -42,6 +42,7 @@ return {
 		GetSpellInfo(34500), -- Expose Weakness
 		GetSpellInfo(1543), -- Flare 
 		GetSpellInfo(1130), -- Hunter's Mark 
+		GetSpellInfo(53480), --Roar of Sacrifice
 		GetSpellInfo(34506), -- Master Tactician
 		GetSpellInfo(136), -- Mend Pet",
 		GetSpellInfo(6150), -- Quick Shots",

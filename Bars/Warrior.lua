@@ -15,6 +15,8 @@ return {
 		GetSpellInfo(20230), -- Retaliation
 		GetSpellInfo(29834), -- Second Wind
 		GetSpellInfo(2565), -- Shield Block
+		GetSpellInfo(29723), --Sudden Death
+		GetSpellInfo(12317), --Enrage
 		GetSpellInfo(58363), -- Glyph of Revenge
         GetSpellInfo(46951), -- Sword and Board
 		(GetSpellInfo(871)), -- Shield Wall --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
@@ -42,6 +44,7 @@ return {
 		GetSpellInfo(1161), -- Challenging Shout
 		GetSpellInfo(20243), -- Devastate
 		GetSpellInfo(676), -- Disarm
+		GetSpellInfo(46924), --Bladestorm
 		GetSpellInfo(5246), -- Intimidating Shout
 		GetSpellInfo(694), -- Mocking Blow
 		GetSpellInfo(7384), -- Overpower
