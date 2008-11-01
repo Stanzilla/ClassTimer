@@ -13,6 +13,7 @@ return {
 		GetSpellInfo(30823), -- Shamanistic Rage
 		GetSpellInfo(51528), -- Maelstrom Weapon
 		GetSpellInfo(51730), -- Earthliving Weapon
+		GetSpellInfo(51945), -- Earthliving
 		GetSpellInfo(55198), -- Tidal Force
 		GetSpellInfo(17364), -- Stormstrike
 		(GetSpellInfo(30802)), -- Unleashed Rage --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
