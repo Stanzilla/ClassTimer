@@ -29,6 +29,10 @@ return {
 		GetSpellInfo(12042), -- Arcane Power
 		GetSpellInfo(12472), --Icy Veins
 		GetSpellInfo(48108), --Hot Streak
+		GetSpellInfo(44404), --Missile Barrage
+		GetSpellInfo(44543), --Fingers of Frost
+		GetSpellInfo(57761), --FireBall!
+		GetSpellInfo(31589), --Slow
 		(GetSpellInfo(11255)), -- Improved Counterspell --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Misc = {

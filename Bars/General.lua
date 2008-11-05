@@ -27,8 +27,5 @@ return race == "Scourge" and {
 	or race == "Draenei" and {
 		(GetSpellInfo(28880)), -- Gift of the Naaru --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}
-	or race == "Human" and {
-		(GetSpellInfo(20600)), -- Perception --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-	}
 	or {}
 end

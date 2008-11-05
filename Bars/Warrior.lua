@@ -19,6 +19,7 @@ return {
 		GetSpellInfo(12317), --Enrage
 		GetSpellInfo(58363), -- Glyph of Revenge
         GetSpellInfo(46951), -- Sword and Board
+		GetSpellInfo(46916), --Slam!
 		(GetSpellInfo(871)), -- Shield Wall --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
