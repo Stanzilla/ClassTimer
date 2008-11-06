@@ -59,6 +59,7 @@ return {
 		GetSpellInfo(10326), -- Turn Evil
 		GetSpellInfo(20049), --Vengeance
 		GetSpellInfo(20335), -- Heart of the Crusader
+		GetSpellInfo(53380), -- Righteous Vengeance
 		(GetSpellInfo(9452)), -- Vindication --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}	
 }
