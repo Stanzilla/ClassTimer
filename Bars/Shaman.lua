@@ -16,6 +16,7 @@ return {
 		GetSpellInfo(51945), -- Earthliving
 		GetSpellInfo(55198), -- Tidal Force
 		GetSpellInfo(17364), -- Stormstrike
+		GetSpellInfo(61295), -- Riptide
 		(GetSpellInfo(30802)), -- Unleashed Rage --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Shocks = {

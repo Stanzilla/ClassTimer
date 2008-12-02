@@ -38,6 +38,7 @@ return {
 	},
 	Misc = {
 		GetSpellInfo(1539), -- Feed Pet Effect
+		GetSpellInfo(53480), --Roar of Sacrifice
 		GetSpellInfo(19263), -- Deterrence
 		GetSpellInfo(34500), -- Expose Weakness
 		GetSpellInfo(1543), -- Flare 

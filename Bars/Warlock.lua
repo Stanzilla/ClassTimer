@@ -10,6 +10,7 @@ return {
 		GetSpellInfo(1122), -- Inferno
 		GetSpellInfo(30299), -- Nether Protection
 		GetSpellInfo(17941), -- Shadow Trance
+		GetSpellInfo(32394), --Shadow Embrace
 		(GetSpellInfo(17794)), -- Shadow Vulnerability --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Curses = {
@@ -25,6 +26,7 @@ return {
 	DOTs = {
 		GetSpellInfo(172), -- Corruption
 		GetSpellInfo(44518), -- Immolate
+		GetSpellInfo(61290), --Shadowflame
 		GetSpellInfo(18265), -- Siphon Life
 		GetSpellInfo(27243), --Seed of Corruption
 		(GetSpellInfo(30108)), -- Unstable Affliction --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.

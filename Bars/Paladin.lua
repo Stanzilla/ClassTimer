@@ -24,6 +24,7 @@ return {
 		GetSpellInfo(642), -- Divine Shield
 		GetSpellInfo(20177), -- Reckoning
 		GetSpellInfo(25780), -- Righteous Fury
+		GetSpellInfo(53601), --Sacred Shield
 		GetSpellInfo(53486), --The Art of War
 		(GetSpellInfo(20925)), -- Holy Shield --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
@@ -49,6 +50,7 @@ return {
 		(GetSpellInfo(20066)), -- Repentance --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Misc = {
+		GetSpellInfo(53380), --Righteous Vengeance
 		GetSpellInfo(31935), -- Avenger's Shield
 		GetSpellInfo(26573), -- Consecration
 		GetSpellInfo(31842), -- Divine Illumination

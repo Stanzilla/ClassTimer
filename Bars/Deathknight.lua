@@ -9,6 +9,7 @@ return {
 		GetSpellInfo(49039), -- Lichborne
 		GetSpellInfo(48792), -- Icebound Fortitude 
 		GetSpellInfo(55095), -- Frost Fever 
+		GetSpellInfo(51376), -- Unholy Blight
 		GetSpellInfo(22744), -- Chains of Ice
 		GetSpellInfo(55078), -- Blood Plague
 		GetSpellInfo(51726), -- Ebon Plague
