@@ -8,13 +8,26 @@
 ## Version: 2.1
 ## OptionalDeps: Ace3, Expo, LibSharedMedia-3.0 
 
-## X-Embeds: Ace3, LibSharedMedia-3.0
 ## X-Website: http://www.wowace.com/projects/classtimer/
 ## X-Credits: Nymbia
 ## X-Category: Combat
 ## X-RelSite-Curse: 7992
 
-embeds.xml
+#@no-lib-strip@
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceAddon-3.0\AceAddon-3.0.xml
+libs\AceBucket-3.0\AceBucket-3.0.xml
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+libs\AceConsole-3.0\AceConsole-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+libs\AceTimer-3.0\AceTimer-3.0.xml
+libs\AceEvent-3.0\AceEvent-3.0.xml
+libs\AceLocale-3.0\AceLocale-3.0.xml
+libs\LibSharedMedia-3.0\lib.xml
+#@end-no-lib-strip@
 
 Locales\enUS.lua
 Locales\koKR.lua
