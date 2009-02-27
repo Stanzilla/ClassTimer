@@ -1,5 +1,5 @@
-﻿-- Translation by gygabyte, TalksWind
--- Last Update : 07/10/2008
+﻿-- Translation by gygabyte, TalksWind, shwy73
+-- Last Update : 02/18/2009
 
 local L = LibStub("AceLocale-3.0"):NewLocale("ClassTimer","koKR")
 
@@ -12,8 +12,8 @@ L['AllInOne'] = '바 공유'
 L['Units'] = '유닛'
 L['Display all the buffs and debuffs on the AllInOne owner bar'] = '공유 소유자 바에 모든 버프와 디버프를 표시합니다'
 L['Owner'] = '소유자'
-L['Display the AllInOne Bars this bar'] = ' 공유 바를 이 바에 표시합니다'
-L['General'] = '공통'
+L['Display the AllInOne Bars this bar'] = '공유 바를 이 바에 표시합니다'
+L['General'] = '일반'
 L['Enable Buffs'] = '버프 활성화'
 L['Show buffs'] = '버프를 보여줍니다'
 L["Timers"] = '타이머'
@@ -22,10 +22,12 @@ L['Show debuffs'] = '디버프를 보여줍니다'
 L['Lock'] = '잠금'
 L['Toggle Cast Bar lock'] = '시전 바 잠금 기능을 전환합니다'
 L['Use Clicks'] = '클릭 사용'
-L['Print timeleft and ability on right click'] = '우-클릭시의 능력과 남은 시간을 출력합니다'
+L['Print timeleft and ability on right click'] = '우-클릭시 능력과 남은 시간을 출력합니다'
 L['Grow Up'] = '위로 확장'
 L['Set bars to grow up'] = '바의 확장을 위로 설정합니다'
-L['Reversed'] = '뒤집기'
+L['Reversed'] = '반대로'
+L['Reverse the bars (fill vs deplete)'] = '바를 반전 시킵니다.(채움 vs 비움)'
+L['Reverse up/down sorting'] = '역방향 위/아래 정렬'
 L['Show Only Icons'] = '아이콘만 보이기'
 L['Show only icons and timeleft'] = '아이콘과 남은 시간만을 보여줍니다'
 L['Frame Attributes'] = '프레임 속성'
@@ -94,6 +96,10 @@ L['Enable or disable timers'] = '타이머를 활성화하거나 비활성화합
 L['Enable ClassTimer'] = 'ClassTimer 활성화'
 L['Add Sticky'] = '달라붙기 추가'
 L['Add a move to be sticky'] = '달라붙도록 이동 기능을 추가합니다.'
+L['Reverse sort'] = '반대로 정렬'
+L['Reverse up/down sorting'] = '역방향 위/아래 정렬'
+L['Set the alpha of the bars'] = '바의 투명도 설정'
+L['Alpha'] = '투명도'
 
 --Types of buffs
 L['Stuns'] = '기절'
@@ -117,6 +123,7 @@ L['Magic'] = '마법'
 L['Disease'] = '질병'
 L['Normal'] = '보통'
 L['Extras'] = '별도'
+L['Shields'] = '방어'
 
 --Units
 L['target'] = '대상'
