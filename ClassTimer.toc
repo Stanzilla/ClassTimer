@@ -3,6 +3,7 @@
 ## Notes: Timers for Buffs, DOTs, CC effects, etc..
 ## Notes-zhCN: 职业技能计时计
 ## Notes-zhTW: 職業技能計時計
+## Notes-ruRU: Таймеры для  баффов, DOTs, CC эффектов, и т.д.
 ## Author: Ominous
 ## SavedVariables: ClassTimerDB
 ## Version: 2.1
@@ -33,6 +34,7 @@ Locales\enUS.lua
 Locales\koKR.lua
 Locales\zhCN.lua
 Locales\zhTW.lua
+Locales\ruRU.lua
 
 ClassTimer.lua
 options.lua
