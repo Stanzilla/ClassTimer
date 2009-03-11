@@ -404,7 +404,7 @@ do
                     name, _, texture, count, _, duration, endTime, caster = UnitDebuff(unit, i)
                     isMine = caster and caster == "player"
                 else
-                    name, _, texture, count, _, duration, endTime, isMine = UnitDeuff(unit, i)
+                    name, _, texture, count, _, duration, endTime, isMine = UnitDebuff(unit, i)
                 end
 				if not name then
 					break
