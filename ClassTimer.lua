@@ -399,12 +399,12 @@ do
 		if db.debuffs then
 			local i=1
 			while true do
-				local name, texture, count,debuffType, duration, endTime, isMine, caster
+				local name, texture, count, debuffType, duration, endTime, isMine, caster
                 if wow_310 then
-                    name, _, texture, count, _, duration, endTime, caster = UnitDebuff(unit, i)
+                    name, _, texture, count, debuffType, _, duration, endTime, caster = UnitDebuff(unit, i)
                     isMine = caster and caster == "player"
                 else
-                    name, _, texture, count, _, duration, endTime, isMine = UnitDebuff(unit, i)
+                    name, _, texture, count, debuffType, _, duration, endTime, isMine = UnitDebuff(unit, i)
                 end
 				if not name then
 					break
