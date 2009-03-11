@@ -21,6 +21,8 @@ local pairs = _G.pairs
 local ipairs = _G.ipairs
 local UnitIsUnit = _G.UnitIsUnit
 
+local wow_310 = select(4,GetBuildInfo()) >= 30100
+
 local _, enClass = UnitClass("player")
 local hasPet = enClass=="HUNTER" or enClass=="WARLOCK" and true
 local unlocked = {}
@@ -359,7 +361,13 @@ do
 		if db.buffs then
 			local i=1
 			while true do
-				local name, _, texture, count, _, duration, endTime, isMine = UnitBuff(unit, i)
+                local name, texture, count,debuffType, duration, endTime, isMine, caster
+                if wow_310 then
+                    name, _, texture, count, _, duration, endTime, caster = UnitBuff(unit, i)
+                    isMine = caster and caster == "player"
+                else
+                    name, _, texture, count, _, duration, endTime, isMine = UnitBuff(unit, i)
+                end
 				if not name then
 					break
 				end
@@ -391,7 +399,13 @@ do
 		if db.debuffs then
 			local i=1
 			while true do
-				local name, _, texture, count, debuffType, duration, endTime, isMine = UnitDebuff(unit, i)
+				local name, texture, count,debuffType, duration, endTime, isMine, caster
+                if wow_310 then
+                    name, _, texture, count, _, duration, endTime, caster = UnitDebuff(unit, i)
+                    isMine = caster and caster == "player"
+                else
+                    name, _, texture, count, _, duration, endTime, isMine = UnitDeuff(unit, i)
+                end
 				if not name then
 					break
 				end
