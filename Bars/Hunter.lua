@@ -31,6 +31,7 @@ return {
 		(GetSpellInfo(34692)), -- The Beast Within --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Traps = {
+		GetSpellInfo(63668), -- Black Arrow
 		GetSpellInfo(13812), -- Explosive Trap Effect
 		GetSpellInfo(3355), -- Freezing Trap Effect
 		GetSpellInfo(13810), -- Frost Trap Aura

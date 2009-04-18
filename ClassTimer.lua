@@ -1,7 +1,7 @@
 --[[
 Uber credits must be given to nymbia for the metatables and frames, thanks!
 ]]
---Ace2 Registering
+--Ace3 Registering
 
 ClassTimer = LibStub("AceAddon-3.0"):NewAddon("ClassTimer", "AceBucket-3.0", "AceConsole-3.0", "AceEvent-3.0")
 
@@ -20,8 +20,6 @@ local gsub = _G.gsub
 local pairs = _G.pairs
 local ipairs = _G.ipairs
 local UnitIsUnit = _G.UnitIsUnit
-
-local wow_310 = select(4,GetBuildInfo()) >= 30100
 
 local _, enClass = UnitClass("player")
 local hasPet = enClass=="HUNTER" or enClass=="WARLOCK" and true
@@ -362,13 +360,9 @@ do
 			local i=1
 			while true do
                 local name, texture, count,debuffType, duration, endTime, isMine, caster
-                if wow_310 then
                     name, _, texture, count, _, duration, endTime, caster = UnitBuff(unit, i)
                     isMine = caster and caster == "player"
-                else
-                    name, _, texture, count, _, duration, endTime, isMine = UnitBuff(unit, i)
-                end
-				if not name then
+                if not name then
 					break
 				end
 				if duration and duration > 0 and self.db.profile.Abilities[name] and isMine then
@@ -400,13 +394,9 @@ do
 			local i=1
 			while true do
 				local name, texture, count, debuffType, duration, endTime, isMine, caster
-                if wow_310 then
                     name, _, texture, count, debuffType, duration, endTime, caster = UnitDebuff(unit, i)
                     isMine = caster and caster == "player"
-                else
-                    name, _, texture, count, debuffType, duration, endTime, isMine = UnitDebuff(unit, i)
-                end
-				if not name then
+                if not name then
 					break
 				end
 				if duration and duration > 0 and self.db.profile.Abilities[name] and isMine then
