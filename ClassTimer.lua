@@ -9,6 +9,7 @@ local ClassTimer = ClassTimer
 
 local AceDB = LibStub("AceDB-3.0") 
 local L = LibStub("AceLocale-3.0"):GetLocale("ClassTimer", true)
+local DataBroker = LibStub:GetLibrary("LibDataBroker-1.1",true)
 local sm = LibStub("LibSharedMedia-3.0")
 
 local _G = _G
@@ -194,6 +195,15 @@ function ClassTimer:OnInitialize()
 	--Remove Ace2 variables
 	if ClassTimerDB and ClassTimerDB.version then
 		ClassTimerDB = nil
+	end
+	if DataBroker then
+		local launcher = DataBroker:NewDataObject("ClassTimer", {
+		type = "launcher",
+		icon = "Interface\\Minimap\\Tracking\\Class",
+		OnClick = function(clickedframe, button)
+			LibStub("AceConfigDialog-3.0"):Open("ClassTimer")
+		end,
+		})		
 	end
 	local validate = {}
 	local timerargs = {}

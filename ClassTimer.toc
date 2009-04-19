@@ -6,7 +6,7 @@
 ## Notes-ruRU: Таймеры для  баффов, DOTs, CC эффектов, и т.д.
 ## Author: Ominous
 ## SavedVariables: ClassTimerDB
-## Version: 2.1
+## Version: 2.2
 ## OptionalDeps: Ace3, Expo, LibSharedMedia-3.0 
 
 ## X-Website: http://www.wowace.com/projects/classtimer/
@@ -28,6 +28,7 @@ libs\AceTimer-3.0\AceTimer-3.0.xml
 libs\AceEvent-3.0\AceEvent-3.0.xml
 libs\AceLocale-3.0\AceLocale-3.0.xml
 libs\LibSharedMedia-3.0\lib.xml
+libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 #@end-no-lib-strip@
 
 Locales\enUS.lua
