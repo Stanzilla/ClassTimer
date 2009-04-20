@@ -54,6 +54,7 @@ return {
 		GetSpellInfo(31935), -- Avenger's Shield
 		GetSpellInfo(26573), -- Consecration
 		GetSpellInfo(31842), -- Divine Illumination
+		GetSpellInfo(64205), -- Divine Sacrifice
 		GetSpellInfo(53563), -- Beacon of Light
 		GetSpellInfo(31833), -- Light's Grace
 		GetSpellInfo(53672), -- Infusion of Light
