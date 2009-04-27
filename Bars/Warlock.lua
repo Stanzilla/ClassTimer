@@ -17,8 +17,6 @@ return {
 		GetSpellInfo(980), -- Curse of Agony
 		GetSpellInfo(603), -- Curse of Doom
 		GetSpellInfo(18223), -- Curse of Exhaustion
-		GetSpellInfo(704), -- Curse of Recklessness
-		--GetSpellInfo(17862), -- Curse of Shadow
 		GetSpellInfo(1490), -- Curse of the Elements
 		GetSpellInfo(1714), -- Curse of Tongues
 		(GetSpellInfo(702)), -- Curse of Weakness --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.

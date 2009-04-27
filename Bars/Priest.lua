@@ -14,7 +14,7 @@ return {
 		GetSpellInfo(139), -- Renew
 		GetSpellInfo(15270), -- Spirit Tap
 		GetSpellInfo(34754), --Clearcasting
-		GetSpellInfo(47894), --Improved Holy Concentration 
+		GetSpellInfo(63735), --Serendipity
 		(GetSpellInfo(33150)), -- Surge of Light  --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
