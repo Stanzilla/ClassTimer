@@ -12,6 +12,7 @@ return {
 		GetSpellInfo(1008), -- Amplify Magic
 		GetSpellInfo(604), -- Dampen Magic
 		GetSpellInfo(6117), -- Mage Armor
+		GetSpellInfo(30451), -- Arcane Blast
 		(GetSpellInfo(30482)), -- Molten Armor --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
@@ -20,7 +21,7 @@ return {
 		GetSpellInfo(2120), -- Flamestrike
 		GetSpellInfo(11119), -- Ignite
 		GetSpellInfo(11366), -- Pyroblast
-        GetSpellInfo(44457), --Living Bomb
+        	GetSpellInfo(44457), --Living Bomb
 		(GetSpellInfo(11180)), -- Winter's Chill --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {
@@ -43,6 +44,7 @@ return {
 		GetSpellInfo(44543), -- Fingers of Frost
 		GetSpellInfo(57761), -- FireBall!
 		GetSpellInfo(31589), -- Slow
+		GetSpellInfo(55342), -- Mirror Image
 		(GetSpellInfo(11255)), -- Improved Counterspell --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Misc = {
