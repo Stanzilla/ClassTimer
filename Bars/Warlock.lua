@@ -11,6 +11,7 @@ return {
 		GetSpellInfo(30299), -- Nether Protection
 		GetSpellInfo(17941), -- Shadow Trance
 		GetSpellInfo(32394), --Shadow Embrace
+		GetSpellInfo(63156), --Decimation
 		(GetSpellInfo(17794)), -- Shadow Vulnerability --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Curses = {
