@@ -16,6 +16,7 @@ return {
 		GetSpellInfo(34754), -- Clearcasting
 		GetSpellInfo(15257), -- Shadow Weaving
 		GetSpellInfo(63735), -- Serendipity
+		GetSpellInfo(47788), -- Guardian Spirit
 		(GetSpellInfo(33150)), -- Surge of Light  --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
@@ -29,7 +30,6 @@ return {
 	},
 	Stuns = {
 		GetSpellInfo(552), -- Abolish Disease
-		GetSpellInfo(15269), -- Blackout
 		GetSpellInfo(586), -- Fade
 		GetSpellInfo(1706), -- Levitate
 		GetSpellInfo(453), -- Mind Soothe
