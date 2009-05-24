@@ -47,6 +47,7 @@ return {
 		GetSpellInfo(1161), -- Challenging Shout
 		GetSpellInfo(20243), -- Devastate
 		GetSpellInfo(676), -- Disarm
+		GetSpellInfo(46859), -- Unrelenting Assault
 		GetSpellInfo(46924), --Bladestorm
 		GetSpellInfo(5246), -- Intimidating Shout
 		GetSpellInfo(694), -- Mocking Blow
