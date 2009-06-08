@@ -23,7 +23,7 @@ local ipairs = _G.ipairs
 local UnitIsUnit = _G.UnitIsUnit
 
 local _, enClass = UnitClass("player")
-local hasPet = enClass=="HUNTER" or enClass=="WARLOCK" and true
+local hasPet = enClass=="HUNTER" or enClass=="WARLOCK" or enClass=="DEATHKNIGHT" and true
 local unlocked = {}
 local sticky = {}
 ClassTimer.unlocked = unlocked
