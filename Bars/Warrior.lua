@@ -29,6 +29,7 @@ return {
 		GetSpellInfo(1160), -- Demoralizing Shout
 		GetSpellInfo(1715), -- Hamstring
 		GetSpellInfo(12294), -- Mortal Strike
+		GetSpellInfo(64382), -- Shattering Throw
 		GetSpellInfo(6552), -- Pummel
 		GetSpellInfo(772), -- Rend
 		GetSpellInfo(72), -- Shield Bash
