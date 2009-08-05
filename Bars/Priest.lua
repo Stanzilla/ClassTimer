@@ -26,6 +26,7 @@ return {
 		GetSpellInfo(15487), -- Silence
 		GetSpellInfo(15286), -- Vampiric Embrace
 		GetSpellInfo(14914), -- Holy Fire
+        GetSpellInfo(48301), -- Mind Trauma
 		(GetSpellInfo(34914)), -- Vampiric Touch --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {

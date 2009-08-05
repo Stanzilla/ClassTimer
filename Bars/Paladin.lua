@@ -36,8 +36,6 @@ return {
 		(GetSpellInfo(53408)), -- Judgement of Wisdom -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Seals = {
-		GetSpellInfo(53720), -- Seal of the Martyr
-		GetSpellInfo(31892), -- Seal of Blood
 		GetSpellInfo(20375), -- Seal of Command
 		GetSpellInfo(20164), -- Seal of Justice
 		GetSpellInfo(20165), -- Seal of Light
