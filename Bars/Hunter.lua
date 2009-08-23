@@ -1,4 +1,4 @@
-﻿local _, englishClass = UnitClass("player")
+local _, englishClass = UnitClass("player")
 if (englishClass ~="HUNTER") then
 	return
 end
@@ -47,14 +47,14 @@ return {
 		GetSpellInfo(53517), -- Roar of Recovery
 		GetSpellInfo(19263), -- Deterrence
 		GetSpellInfo(34500), -- Expose Weakness
-		GetSpellInfo(1543), -- Flare 
-		GetSpellInfo(1130), -- Hunter's Mark 
+		GetSpellInfo(1543), -- Flare
+		GetSpellInfo(1130), -- Hunter's Mark
 		GetSpellInfo(53480), -- Roar of Sacrifice
 		GetSpellInfo(34506), -- Master Tactician
 		GetSpellInfo(136), -- Mend Pet
 		GetSpellInfo(6150), -- Quick Shots
 		GetSpellInfo(3045), -- Rapid Fire
-		GetSpellInfo(1513), -- Scare Beast 
+		GetSpellInfo(1513), -- Scare Beast
 		(GetSpellInfo(34490)), -- Silencing Shot --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 }

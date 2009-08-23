@@ -25,7 +25,7 @@ local function setColor(info, ...)
 	ClassTimer.ApplySettings()
 end
 
-ClassTimer.options = { 
+ClassTimer.options = {
 	type = 'group',
 	icon = '',
 	name = 'ClassTimer',
@@ -84,8 +84,8 @@ ClassTimer.options = {
 			order = 3,
 			args = {
 				Spacer = {
-					type = "header", 
-					order = 1, 
+					type = "header",
+					order = 1,
 					name = L["Bar Settings"]
 				},
 				EnabledUnits = {
@@ -109,9 +109,9 @@ ClassTimer.options = {
 							name = L['Units'],
 							desc = L['Display all the buffs and debuffs on the AllInOne owner bar'],
 							get = function(_, key) return ClassTimer.db.profile.Group[key] end,
-							set = function(_, key, value) 
+							set = function(_, key, value)
 								if not ClassTimer.db.profile.AllInOneOwner then
-									ClassTimer.db.profile.AllInOneOwner = key 
+									ClassTimer.db.profile.AllInOneOwner = key
 								elseif not ClassTimer.db.profile.Group[ClassTimer.db.profile.AllInOneOwner] then
 									ClassTimer.db.profile.AllInOneOwner = key
 								end
@@ -493,9 +493,9 @@ function ClassTimer:AddUnitOptions(type)
 				args = {},
 			} or nil
 		},
-	}	
+	}
 end
-	
+
 local values = {}
 local values2 = {}
 for k in pairs(bars) do
@@ -510,4 +510,4 @@ values2['sticky'] = nil
 ClassTimer.options.args.BarSettings.args.AllInOne.args.Units.values = values2
 ClassTimer.options.args.BarSettings.args.AllInOne.args.Owner.values = values2
 local values = nil
-local values2 = nil 
+local values2 = nil

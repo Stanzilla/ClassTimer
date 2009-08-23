@@ -120,7 +120,7 @@ L['Disease'] = "疾病"
 L['Normal'] = "一般"
 L['Extras'] = "额外"
 
---Units 
+--Units
 L['target'] = "目标"
 L['focus'] = "焦点"
 L['player'] = "玩家"

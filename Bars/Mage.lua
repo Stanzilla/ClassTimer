@@ -1,4 +1,4 @@
-﻿local _, englishClass = UnitClass("player")
+local _, englishClass = UnitClass("player")
 if (englishClass ~="MAGE") then
 	return
 end
@@ -40,7 +40,7 @@ return {
 		GetSpellInfo(12042), -- Arcane Power
 		GetSpellInfo(12472), -- Icy Veins
 		GetSpellInfo(48108), -- Hot Streak
-		GetSpellInfo(44404), -- Missile Barrage
+		GetSpellInfo(44401), -- Missile Barrage
 		GetSpellInfo(44543), -- Fingers of Frost
 		GetSpellInfo(57761), -- FireBall!
 		GetSpellInfo(31589), -- Slow

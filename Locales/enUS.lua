@@ -1,4 +1,4 @@
-﻿local L = LibStub("AceLocale-3.0"):NewLocale("ClassTimer","enUS",true)
+local L = LibStub("AceLocale-3.0"):NewLocale("ClassTimer","enUS",true)
 
 --options
 L['Bar Settings'] = true
@@ -120,7 +120,7 @@ L['Normal'] = true
 L['Extras'] = true
 L['Shields'] = true
 
---Units 
+--Units
 L['target'] = true
 L['focus'] = true
 L['player'] = true

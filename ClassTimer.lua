@@ -7,7 +7,7 @@ ClassTimer = LibStub("AceAddon-3.0"):NewAddon("ClassTimer", "AceBucket-3.0", "Ac
 
 local ClassTimer = ClassTimer
 
-local AceDB = LibStub("AceDB-3.0") 
+local AceDB = LibStub("AceDB-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("ClassTimer", true)
 local DataBroker = LibStub:GetLibrary("LibDataBroker-1.1",true)
 local sm = LibStub("LibSharedMedia-3.0")
@@ -89,14 +89,14 @@ do
 				frame.spark:SetPoint('CENTER', frame, 'RIGHT', -sp, 0)
 			end
 		end
-		
+
 	end
 end
-do 
+do
 	local function MouseUp(bar, button)
 		if ClassTimer.db.profile.Units[bar.unit].click then
-			if button == 'RightButton' then 
-				local msg = L['%s has %s left']:format(bar.text:GetText(), bar.timetext:GetText()) 
+			if button == 'RightButton' then
+				local msg = L['%s has %s left']:format(bar.text:GetText(), bar.timetext:GetText())
 				if UnitInRaid('player') then
 					SendChatMessage(msg, 'RAID')
 				elseif GetNumPartyMembers() > 0 then
@@ -119,7 +119,7 @@ do
 			bar.timetext = bar:CreateFontString(nil, 'OVERLAY')
 			bar.icon = bar:CreateTexture(nil, 'DIALOG')
 			bar:SetScript('OnMouseUp', MouseUp)
-			
+
 			local spark = bar:CreateTexture(nil, "OVERLAY")
 			bar.spark = spark
 			spark:SetTexture("Interface\\CastingBar\\UI-CastingBar-Spark")
@@ -147,7 +147,7 @@ ClassTimer.defaults = {
 		Custom    = {},
 		Group     = {},
 		Sticky    = {},
-		Units     = { 
+		Units     = {
 			['**']     = {
 				enable          = true,
 				buffs           = true,
@@ -190,7 +190,7 @@ ClassTimer.defaults = {
 	}
 }
 
- 
+
 function ClassTimer:OnInitialize()
 	--Remove Ace2 variables
 	if ClassTimerDB and ClassTimerDB.version then
@@ -203,13 +203,13 @@ function ClassTimer:OnInitialize()
 		OnClick = function(clickedframe, button)
 			LibStub("AceConfigDialog-3.0"):Open("ClassTimer")
 		end,
-		})		
+		})
 	end
 	local validate = {}
 	local timerargs = {}
 	local table =  self:CreateTimers()
 	table['Race'] = self:Races()
-	
+
 	for k, v in pairs(table) do
 		for n in ipairs(v) do
 			ClassTimer.defaults.profile.Abilities[v[n]] = true
@@ -232,12 +232,12 @@ function ClassTimer:OnInitialize()
 			}
 		}
 	end
-	
+
 	self.db = LibStub("AceDB-3.0"):New("ClassTimerDB", self.defaults)
 	self.options.args.Profiles = LibStub("AceDBOptions-3.0"):GetOptionsTable(ClassTimer.db)
 	timerargs.Spacer = {
-		type = "header", 
-		order = 1, 
+		type = "header",
+		order = 1,
 		name = L["Timers"]
 	}
 	timerargs.Extras = {
@@ -285,7 +285,7 @@ function ClassTimer:OnInitialize()
 	ClassTimer.db.RegisterCallback(self, 'OnProfileChanged', ClassTimer.ApplySettings)
 	ClassTimer.db.RegisterCallback(self, 'OnProfileCopied', ClassTimer.ApplySettings)
 	ClassTimer.db.RegisterCallback(self, 'OnProfileReset', ClassTimer.ApplySettings)
-	
+
 	sm.RegisterCallback(self, "LibSharedMedia_SetGlobal", function(mediatype, override)
 		if mediatype == 'statusbar' then
             for _, k in pairs(bars) do
@@ -356,9 +356,9 @@ do
 		else
 			str = gsub(str, '%%a', '')
 		end
-		str = gsub(str, '%s%s+', ' ') 
+		str = gsub(str, '%s%s+', ' ')
 		str = gsub(str, '%p%p+', '')
-		str = gsub(str, '%s+$', '')		
+		str = gsub(str, '%s+$', '')
 		return str
 	end
 	local tmp = {}
@@ -469,7 +469,7 @@ do
 
 			for k,v in ipairs(tmp) do
 				local bar = bars[unit][k]
-				
+
 				bar.text:SetText(text(db.bartext, v.name, v.count, v.unit))
 				bar.icon:SetTexture(v.texture)
 				local startTime, endTime = v.endTime - v.duration, v.endTime
@@ -594,9 +594,9 @@ end
 do
 	local function apply(unit, i, bar, db)
 		local bars = bars[unit]
-		local showIcons = db.showIcons 
+		local showIcons = db.showIcons
 		local spacing = db.spacing
-		
+
 		bar:ClearAllPoints()
 		bar:SetStatusBarTexture(sm:Fetch('statusbar', sm.OverrideMedia.statusbar or db.texture))
 		bar:SetHeight(db.height)
@@ -619,7 +619,7 @@ do
 			bar:SetBackdropColor(1, 1, 1, 0)
 			bar.spark:Hide()
 			bar.text:SetFont(sm:Fetch('font', db.font), db.fontsize)
-		else 
+		else
 			if not db.showIcons then
 				if bar.isbuff then
 					bar:SetStatusBarColor(unpack(db.buffcolor))
@@ -648,14 +648,14 @@ do
 			else
 				bar:SetPoint('CENTER', UIParent)
 			end
-		else 
+		else
 			if db.growup then
 				bar:SetPoint('BOTTOMLEFT', bars[i-1], 'TOPLEFT', 0, spacing)
-			else 
+			else
 				bar:SetPoint('TOPLEFT', bars[i-1], 'BOTTOMLEFT', 0, -1 * spacing)
 			end
 		end
-		
+
 		local timetext = bar.timetext
 		if db.timetext then
 			timetext:Show()
@@ -673,7 +673,7 @@ do
 			timetext:Hide()
 			bar.tt = false
 		end
-		
+
 		local text = bar.text
 		text:SetFont(sm:Fetch('font', db.font), db.fontsize)
 		if db.nametext and not showIcons then
@@ -714,4 +714,4 @@ do
 			end
 		end
 	end
-end 
+end

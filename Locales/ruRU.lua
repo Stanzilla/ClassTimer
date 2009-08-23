@@ -1,4 +1,4 @@
-﻿-- Translated Ru by Argonavt-Arkona
+-- Translated Ru by Argonavt-Arkona
 local L = LibStub("AceLocale-3.0"):NewLocale("ClassTimer","ruRU")
 if not L then return end
 
@@ -122,7 +122,7 @@ L['Normal'] = "Нормальные"
 L['Extras'] = "Отдельно"
 L['Shields'] = "Щиты"
 
---Units 
+--Units
 L['target'] = "цель"
 L['focus'] = "фокус"
 L['player'] = "игрок"

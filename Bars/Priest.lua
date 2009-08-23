@@ -1,4 +1,4 @@
-﻿local _, englishClass = UnitClass("player")
+local _, englishClass = UnitClass("player")
 if (englishClass ~="PRIEST") then
 	return
 end

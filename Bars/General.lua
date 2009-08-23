@@ -1,4 +1,4 @@
-﻿local _, race = UnitRace("player")
+local _, race = UnitRace("player")
 
 function ClassTimer:Races()
 return race == "Scourge" and {

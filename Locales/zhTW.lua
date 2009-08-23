@@ -1,4 +1,4 @@
-﻿local L = LibStub("AceLocale-3.0"):NewLocale("ClassTimer","zhTW")
+local L = LibStub("AceLocale-3.0"):NewLocale("ClassTimer","zhTW")
 
 if not L then return end
 
@@ -121,7 +121,7 @@ L['Disease'] = "疾病"
 L['Normal'] = "一般"
 L['Extras'] = "額外"
 
---Units 
+--Units
 L['target'] = "目標"
 L['focus'] = "焦點"
 L['player'] = "玩家"

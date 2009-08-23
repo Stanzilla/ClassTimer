@@ -1,4 +1,4 @@
-﻿-- Translation by gygabyte, TalksWind, shwy73
+-- Translation by gygabyte, TalksWind, shwy73
 -- Last Update : 02/18/2009
 
 local L = LibStub("AceLocale-3.0"):NewLocale("ClassTimer","koKR")

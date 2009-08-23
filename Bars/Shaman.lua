@@ -1,4 +1,4 @@
-﻿local _, englishClass = UnitClass("player")
+local _, englishClass = UnitClass("player")
 if (englishClass ~="SHAMAN") then
 	return
 end
@@ -32,4 +32,4 @@ return {
 		(GetSpellInfo(52127)), --Water Shield -Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 }
-end 
+end
