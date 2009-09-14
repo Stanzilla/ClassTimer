@@ -13,7 +13,9 @@ return {
 		GetSpellInfo(10060), -- Power Infusion
 		GetSpellInfo(139), -- Renew
 		GetSpellInfo(15270), -- Spirit Tap
-		GetSpellInfo(34754), -- Clearcasting
+		GetSpellInfo(34754), -- Holy Concentration
+        GetSpellInfo(59887), -- Borrowed Time
+        GetSpellInfo(47930), -- Grace
 		GetSpellInfo(15257), -- Shadow Weaving
 		GetSpellInfo(63735), -- Serendipity
 		GetSpellInfo(47788), -- Guardian Spirit
