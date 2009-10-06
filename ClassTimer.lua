@@ -666,8 +666,8 @@ do
 			timetext:SetTextColor(unpack(db.textcolor))
 			timetext:SetNonSpaceWrap(false)
 			timetext:ClearAllPoints()
-			timetext:SetPoint('LEFT', bar, 'LEFT', showIcons and 2 or -2, 0)
-			timetext:SetJustifyH(showIcons and 'LEFT' or 'RIGHT')
+			timetext:SetPoint('LEFT', bar, 'LEFT', showIcons and db.iconSide == 'LEFT' and 2 or -2, 0)
+			timetext:SetJustifyH(showIcons and db.iconSide == 'LEFT' and 'LEFT' or 'RIGHT')
 			bar.tt = true
 		else
 			timetext:Hide()
