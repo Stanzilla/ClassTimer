@@ -6,13 +6,11 @@
 ## Notes-ruRU: Таймеры для  баффов, DOTs, CC эффектов, и т.д.
 ## Author: Ominous
 ## SavedVariables: ClassTimerDB
-## Version: @project-version@
+## Version: 2.3
 ## OptionalDeps: Ace3, Expo, LibSharedMedia-3.0 
 
-## X-Website: http://www.wowace.com/projects/classtimer/
 ## X-Credits: Nymbia
 ## X-Category: Combat
-## X-RelSite-Curse: 7992
 
 #@no-lib-strip@
 Libs\LibStub\LibStub.lua
