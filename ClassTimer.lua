@@ -142,44 +142,45 @@ do
 end
 
 ClassTimer.defaults = {
-	profile ={
+	profile = {
 		Abilities = {},
-		Custom    = {},
 		Group     = {},
 		Sticky    = {},
 		Units     = {
 			['**']     = {
-				enable          = true,
-				buffs           = true,
-				click           = false,
-				debuffs         = true,
-				differentColors = false,
-				growup          = false,
-				showIcons       = false,
-				icons           = true,
-				iconSide        = 'LEFT',
-				scale           = 1,
-				spacing         = 0,
-				nametext        = true,
-				timetext        = true,
-				texture         = 'Blizzard',
-				width           = 150,
-				height          = 16,
-				font            = 'Friz Quadrata TT',
-				fontsize        = 9,
-				alpha           = 1,
-				scale           = 1,
-				bartext         = '%s (%a) (%u)',
-				sizeEnable      = false,
-				sizeMax         = 5,
-				buffcolor       = {0,0.49, 1, 1},
-				Poisoncolor     = {0, 1, 0, 1},
-				Magiccolor      = {0, 0, 1, 1},
-				Diseasecolor    = {.55, .15, 0, 1},
-				Cursecolor      = {5, 0, 5, 1},
-				debuffcolor     = {1.0,0.7, 0, 1},
-				backgroundcolor = {0,0, 0, 1},
-				textcolor       = {1,1,1},
+				enable                 = true,
+				buffs                  = true,
+				click                  = false,
+				debuffs                = true,
+				differentColors        = false,
+				growup                 = false,
+				showIcons              = false,
+				icons                  = true,
+				iconSide               = 'LEFT',
+				scale                  = 1,
+				spacing                = 0,
+				nametext               = true,
+				timetext               = true,
+				texture                = 'Blizzard',
+				width                  = 150,
+				height                 = 16,
+				font                   = 'Friz Quadrata TT',
+				fontsize               = 9,
+				alpha                  = 1,
+				scale                  = 1,
+				bartext                = '%s (%a) (%u)',
+				sizeEnable             = false,
+				sizeMax                = 5,
+				buffcolor              = {0,0.49, 1, 1},
+				alwaysshownbuffcolor   = {0.35, 0.45, 0.6, 1},
+				Poisoncolor            = {0, 1, 0, 1},
+				Magiccolor             = {0, 0, 1, 1},
+				Diseasecolor           = {.55, .15, 0, 1},
+				Cursecolor             = {5, 0, 5, 1},
+				debuffcolor            = {1.0,0.7, 0, 1},
+				alwaysshowndebuffcolor = {0.5, 0.45, 0.1, 1},
+				backgroundcolor        = {0,0, 0, 1},
+				textcolor              = {1,1,1},
 			},
 			['focus']  = { click = true },
 			['sticky'] = { enable = false },
@@ -187,6 +188,10 @@ ClassTimer.defaults = {
 			['target'] = {},
 			['pet'] = {},
 		},
+	},
+	char = {
+		Custom = {},
+		AlwaysShown = {},
 	}
 }
 
@@ -234,6 +239,14 @@ function ClassTimer:OnInitialize()
 	end
 
 	self.db = LibStub("AceDB-3.0"):New("ClassTimerDB", self.defaults)
+	-- Move the profile-specific Custom timers to the char-specific timers on the first char you log in with
+	if self.db.profile.Custom then
+		print("ClassTimer: Custom timers have changed from being profile to character specific. The profile-specific custom timers have been copied to this characters custom timers.")
+		for k, v in pairs(self.db.profile.Custom) do
+			self.db.char.Custom[k] = k
+		end
+		self.db.profile.Custom = nil
+	end
 	self.options.args.Profiles = LibStub("AceDBOptions-3.0"):GetOptionsTable(ClassTimer.db)
 	timerargs.Spacer = {
 		type = "header",
@@ -250,15 +263,37 @@ function ClassTimer:OnInitialize()
 				type = 'input',
 				name = L['Add a custom timer'],
 				get = function() return "" end,
-				set = function(_, value) self.db.profile.Custom[value] = value self.db.profile.Abilities[value] = true validate[value] = value end,
+				set = function(_, value) self.db.char.Custom[value] = value validate[value] = value end,
 				usage = L['<Spell Name in games locale>']
 			},
 			Remove = {
 				type = 'multiselect',
 				name = L['Remove a custom timer'],
 				get = function() return false end,
-				set = function(_, key) self.db.profile.Custom[key] = nil self.db.profile.Abilities[key] = nil validate[key] = nil end,
-				values = self.db.profile.Custom,
+				set = function(_, key) self.db.char.Custom[key] = nil validate[key] = nil end,
+				values = self.db.char.Custom,
+			}
+		}
+	}
+	timerargs.AlwaysShown = {
+		type = 'group',
+		name = L['AlwaysShown'],
+		desc = L['Abilities to track regardless of the caster'],
+		order = 11,
+		args = {
+			Add = {
+				type = 'input',
+				name = L['Add a timer that is always shown'],
+				get = function() return "" end,
+				set = function(_, value) self.db.char.AlwaysShown[value] = value validate[value] = value end,
+				usage = L['<Spell Name in games locale>']
+			},
+			Remove = {
+				type = 'multiselect',
+				name = L['Remove an AlwaysShown timer'],
+				get = function() return false end,
+				set = function(_, key) self.db.char.AlwaysShown[key] = nil validate[key] = nil end,
+				values = self.db.char.AlwaysShown,
 			}
 		}
 	}
@@ -266,7 +301,10 @@ function ClassTimer:OnInitialize()
 	for v in pairs(self.db.profile.Abilities) do
 		validate[v] = v
 	end
-	for v in pairs(self.db.profile.Custom) do
+	for v in pairs(self.db.char.Custom) do
+		validate[v] = v
+	end
+	for v in pairs(self.db.char.AlwaysShown) do
 		validate[v] = v
 	end
 	self.options.args.BarSettings.args.sticky.args.Sticky.args.addSticky = {
@@ -364,28 +402,36 @@ do
 	local tmp = {}
 	local called = false -- prevent recursive calls when new bars are created.
 	local stickyset = false
+	local whatsMine = {
+		player = true,
+		pet = true,
+		vehicle = true,
+	}
 	function ClassTimer:GetBuffs(unit, db)
 		local currentTime = GetTime()
 		if db.buffs then
 			local i=1
 			while true do
-                local name, texture, count,debuffType, duration, endTime, isMine, caster
-                    name, _, texture, count, _, duration, endTime, caster = UnitBuff(unit, i)
-                    isMine = caster and caster == "player"
+                local name, _, texture, count, _, duration, endTime, caster = UnitBuff(unit, i)
                 if not name then
 					break
 				end
-				if duration and duration > 0 and self.db.profile.Abilities[name] and isMine then
+                local isMine = whatsMine[caster] 
+				if duration and duration > 0 and (self.db.profile.Abilities[name] or self.db.char.Custom[name]) and isMine or self.db.char.AlwaysShown[name] then
 					local t = new()
 					if self.db.profile.Units.sticky.enable and self.db.profile.Sticky[name] then
 						t.startTime = endTime - duration
 						t.endTime = endTime
 						stickyset = true
 						t.unitname = UnitName(unit)
+						t.alwaysshown = not ismine and self.db.char.AlwaysShown[name]
 						number = sticky[name..t.unitname] or #sticky+1
 						sticky[number] = t
 						sticky[name..t.unitname] = number
 					elseif isMine then
+						tmp[#tmp+1] = t
+					elseif self.db.char.AlwaysShown[name] then
+						t.alwaysshown = true
 						tmp[#tmp+1] = t
 					end
 					t.name = name
@@ -403,24 +449,27 @@ do
 		if db.debuffs then
 			local i=1
 			while true do
-				local name, texture, count, debuffType, duration, endTime, isMine, caster
-                    name, _, texture, count, debuffType, duration, endTime, caster = UnitDebuff(unit, i)
-                    isMine = caster and caster == "player"
+                local name, _, texture, count, _, duration, endTime, caster = UnitDebuff(unit, i)
                 if not name then
 					break
 				end
-				if duration and duration > 0 and self.db.profile.Abilities[name] and isMine then
+                local isMine = whatsMine[caster]
+				if duration and duration > 0 and (self.db.profile.Abilities[name] or self.db.char.Custom[name]) and isMine or self.db.char.AlwaysShown[name] then
 					local t = new()
-					if self.db.profile.Units.sticky.enable and self.db.profile.Sticky[name] and isMine then
+					if self.db.profile.Units.sticky.enable and self.db.profile.Sticky[name] then
 						t.startTime = endTime - duration
 						t.endTime = endTime
 						stickyset = true
 						t.unitname = UnitName(unit)
+						t.alwaysshown = not ismine and self.db.char.AlwaysShown[name]
 						number = sticky[name..t.unitname] or #sticky+1
 						sticky[number] = t
 						sticky[name..t.unitname] = number
 					elseif isMine then
 						tmp[#tmp+1] = t
+					elseif self.db.char.AlwaysShown[name] then
+						t.alwaysshown = true
+						tmp[#tmp + 1] = t
 					end
 					t.name = name
 					t.unit = unit
@@ -478,6 +527,7 @@ do
 				bar.duration = v.duration
 				bar.endTime = endTime
 				bar.isbuff = v.isbuff
+				bar.alwaysshown = v.alwaysshown
 				if db.reversed then
 					bar.reversed = true
 				else
@@ -496,7 +546,9 @@ do
 					end
 				end
 				if not db.showIcons then
-					if bar.isbuff then
+					if bar.alwaysshown then
+						bar:SetStatusBarColor(unpack(bar.isbuff and db.alwaysshownbuffcolor or db.alwaysshowndebuffcolor))
+					elseif bar.isbuff then
 						bar:SetStatusBarColor(unpack(db.buffcolor))
 					elseif db.differentColors and v.dispelType then
 						bar.dispelType = v.dispelType
@@ -550,6 +602,7 @@ do
 				bar.sticky = v.sticky
 				bar.endTime = v.endTime
 				bar.isbuff = v.isbuff
+				bar.alwaysshown = v.alwaysshown
 				bar.name = v.name
 				if db.sizeEnable then
 					if bar.duration < db.sizeMax then
@@ -569,7 +622,9 @@ do
 					bar.reversed = nil
 				end
 				if not db.showIcons then
-					if bar.isbuff then
+					if bar.alwaysshown then
+						bar:SetStatusBarColor(unpack(bar.isbuff and db.alwaysshownbuffcolor or db.alwaysshowndebuffcolor))
+					elseif bar.isbuff then
 						bar:SetStatusBarColor(unpack(db.buffcolor))
 					elseif db.differentColors and v.dispelType then
 						bar.dispelType = v.dispelType
@@ -621,7 +676,9 @@ do
 			bar.text:SetFont(sm:Fetch('font', db.font), db.fontsize)
 		else
 			if not db.showIcons then
-				if bar.isbuff then
+				if bar.alwaysshown then
+					bar:SetStatusBarColor(unpack(bar.isbuff and db.alwaysshownbuffcolor or db.alwaysshowndebuffcolor))
+				elseif bar.isbuff then
 					bar:SetStatusBarColor(unpack(db.buffcolor))
 				elseif db.differentColors and bar.dispelType then
 					bar:SetStatusBarColor(unpack(db[bar.dispelType..'color']))

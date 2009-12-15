@@ -403,6 +403,16 @@ function ClassTimer:AddUnitOptions(type)
 						arg = {type, 'buffcolor'},
 						order = 4,
 					},
+					alwaysshownbuffcolor = {
+						type = 'color',
+						name = L['AlwaysShown buff Color'],
+						desc = L['Set the color of the bars for always shown buffs'],
+						get = getColor,
+						set = setColor,
+						hasAlpha = true,
+						arg = {type, 'alwaysshownbuffcolor'},
+						order = 5,
+					},
 					backgroundcolor = {
 						type = 'color',
 						name = L['Background Color'],
@@ -411,14 +421,14 @@ function ClassTimer:AddUnitOptions(type)
 						set = setColor,
 						hasAlpha = true,
 						arg = {type, 'backgroundcolor'},
-						order = 5,
+						order = 6,
 					},
 					Debuffs = {
 						type = 'group',
 						name = L['Debuff Colors'],
 						desc = L['Set the color of the bars for debuffs'],
 						inline = true,
-						order = 6,
+						order = 7,
 						args = {
 							Normal = {
 								type = 'color',
@@ -429,6 +439,16 @@ function ClassTimer:AddUnitOptions(type)
 								order = 1,
 								hasAlpha = true,
 								arg = {type, 'debuffcolor'},
+							},
+							alwaysshown = {
+								type = 'color',
+								name = L['AlwaysShown'],
+								desc = L['Set the color for always shown debuffs'],
+								get = getColor,
+								set = setColor,
+								order = 1,
+								hasAlpha = true,
+								arg = {type, 'alwaysshowndebuffcolor'},
 							},
 							differentColors = {
 								type = 'toggle',
