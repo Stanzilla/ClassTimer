@@ -119,6 +119,7 @@ L['Magic'] = "魔法"
 L['Disease'] = "疾病"
 L['Normal'] = "一般"
 L['Extras'] = "额外"
+L['Shields'] = "护盾"
 
 --Units
 L['target'] = "目标"
