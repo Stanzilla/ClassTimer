@@ -6,6 +6,7 @@ function ClassTimer:CreateTimers()
 return {
 	Buffs = {
 		GetSpellInfo(13750), -- Adrenaline Rush
+        GetSpellInfo(32645), -- Envenom
 		GetSpellInfo(13877), -- Blade Flurry
 		GetSpellInfo(31224), -- Cloak of Shadows
 		GetSpellInfo(5277), -- Evasion

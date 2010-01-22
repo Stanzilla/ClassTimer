@@ -16,6 +16,7 @@ return {
 		GetSpellInfo(59052), -- Freezing Fog
 		GetSpellInfo(51123), -- Killing Machine
 		GetSpellInfo(57623), -- Horn of Winter
+        GetSpellInfo(49182), -- Blade Barrier
 		GetSpellInfo(63560), -- Ghoul Frenzy (Pet)
 		(GetSpellInfo(49222)), -- Bone Shield --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}
