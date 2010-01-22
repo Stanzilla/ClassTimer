@@ -18,6 +18,7 @@ return {
 	DOTs = {
 		GetSpellInfo(22959), -- Improved Scorch
 		GetSpellInfo(133), -- Fireball
+        GetSpellInfo(44614), -- Frostfire Bolt 
 		GetSpellInfo(2120), -- Flamestrike
 		GetSpellInfo(11119), -- Ignite
 		GetSpellInfo(11366), -- Pyroblast
