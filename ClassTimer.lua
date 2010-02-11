@@ -449,7 +449,7 @@ do
 		if db.debuffs then
 			local i=1
 			while true do
-                local name, _, texture, count, _, duration, endTime, caster = UnitDebuff(unit, i)
+                local name, _, texture, count, debuffType, duration, endTime, caster = UnitDebuff(unit, i)
                 if not name then
 					break
 				end
