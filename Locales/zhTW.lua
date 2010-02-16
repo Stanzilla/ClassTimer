@@ -1,5 +1,4 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("ClassTimer","zhTW")
-
 if not L then return end
 
 --Options
@@ -13,7 +12,7 @@ L['Display the AllInOne Bars this bar'] = "顯示單一統合計時條"
 L['General'] = "通用"
 L['Enable Buffs'] = "啟動 Buffs"
 L['Show buffs'] = "顯示 Buffs"
-L["Timers"] = "計時器"
+L['Timers'] = "計時器"
 L['Enable Debuffs'] = "啟動 DeBuffs"
 L['Show debuffs'] = "顯示 DeBuffs"
 L['Lock'] = "鎖定"
@@ -68,10 +67,13 @@ L['Icon Position'] = "圖示位置"
 L['Set the side of the bar that the icon appears on'] = "設定圖示出現在計時條上的位置"
 L['Buff Color'] = "Buff 顏色"
 L['Set the color of the bars for buffs'] = "設定 Buff 計時條的顏色"
+L['AlwaysShown buff Color'] = "總是顯示 Buff 的顏色"
+L['Set the color of the bars for always shown buffs'] = "設定 Buff 的顏色"
 L['Background Color'] = "背景顏色"
 L['Set the color of the bars background'] = "設定計時條的背景顏色"
 L['Debuff Colors'] = "DeBuff 顏色"
 L['Set the color of the bars for debuffs'] = "設定 DeBuffs 計時條的顏色"
+L['Set the color for always shown debuffs'] = "設定 DeBuff 的顏色"
 L['Set color for normal'] = "設定一般顏色"
 L['Different colors'] = "顏色分類"
 L['Different colors for different debuffs types'] = "不同類型 DeBuff 使用不同顏色"
@@ -87,7 +89,9 @@ L['Other abilities'] = "其他技能"
 L['Add a custom timer'] = "增加自定義計時器"
 L['<Spell Name in games locale>'] = "<法術名稱>"
 L['Remove a custom timer'] = "移除自定義計時器"
-L['Timers'] = "計時器"
+L['Abilities to track regardless of the caster'] = "追蹤不注意的施法"
+L['Add a timer that is always shown'] = "新增總是顯示的計時器"
+L['Remove an AlwaysShown timer'] = true
 L['%s, Drag to move'] = "%s 可以被拖動"
 L['Enable or disable timers'] = "啟動/關閉計時器"
 L['Enable ClassTimer'] = "開啟 ClassTimer"
@@ -119,6 +123,7 @@ L['Poison'] = "毒藥"
 L['Magic'] = "魔法"
 L['Disease'] = "疾病"
 L['Normal'] = "一般"
+L['AlwaysShown'] = "總是顯示"
 L['Extras'] = "額外"
 L['Shields'] = "護盾"
 
@@ -130,7 +135,7 @@ L['pet'] = "寵物"
 L['general'] = "一般"
 L['sticky'] = "黏貼"
 
-	--other
+--other
 L['Left'] = "左"
 L['Right'] = "右"
 L['%s has %s left'] = "%s 剩餘 %s"
