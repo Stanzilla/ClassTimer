@@ -17,6 +17,7 @@ return {
 		GetSpellInfo(2983), -- Sprint
 		GetSpellInfo(51662), -- Hunger for Blood
 		GetSpellInfo(51713), -- Shadow Dance
+        GetSpellInfo(58426), -- Overkill
 		GetSpellInfo(51690), --Killing Spree
 		(GetSpellInfo(1856)), -- Vanish --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
