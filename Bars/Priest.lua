@@ -17,6 +17,8 @@ return {
         GetSpellInfo(59887), -- Borrowed Time
         GetSpellInfo(47930), -- Grace
 		GetSpellInfo(15257), -- Shadow Weaving
+        GetSpellInfo(59000), -- Improved Spirit Tap
+        GetSpellInfo(61792), -- Shadowy Insight
 		GetSpellInfo(63735), -- Serendipity
 		GetSpellInfo(47788), -- Guardian Spirit
 		(GetSpellInfo(33150)), -- Surge of Light  --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
@@ -29,6 +31,7 @@ return {
 		GetSpellInfo(15286), -- Vampiric Embrace
 		GetSpellInfo(14914), -- Holy Fire
         GetSpellInfo(48301), -- Mind Trauma
+        GetSpellInfo(64044), -- Psychic Horror
 		(GetSpellInfo(34914)), -- Vampiric Touch --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {
