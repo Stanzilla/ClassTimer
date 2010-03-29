@@ -44,7 +44,8 @@ return {
 		GetSpellInfo(33878), -- Mangle (Bear)
 		GetSpellInfo(33876), -- Mangle (Cat)
 		GetSpellInfo(48438), -- Wild Growth
-		GetSpellInfo(48521), -- Eclipse
+		GetSpellInfo(48517), -- Eclipse (Solar)
+		GetSpellInfo(48518), -- Eclipse (Lunar)
         GetSpellInfo(69369), -- Predator's Swiftness
 		(GetSpellInfo(16689)), -- Nature's Grasp --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
