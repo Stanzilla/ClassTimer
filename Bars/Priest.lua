@@ -9,6 +9,7 @@ return {
 		GetSpellInfo(47585), -- Dispersion
 		GetSpellInfo(14892), -- Inspiration
 		--GetSpellInfo(14531), -- Martyrdom
+        GetSpellInfo(77487), --Shadow Orbs
 		GetSpellInfo(33206), -- Pain Suppression
 		GetSpellInfo(10060), -- Power Infusion
 		GetSpellInfo(139), -- Renew
