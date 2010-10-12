@@ -4,13 +4,13 @@ local L = LibStub("AceLocale-3.0"):GetLocale("ClassTimer", true)
 local bars = ClassTimer.bars
 local unlocked = ClassTimer.unlocked
 
-local function dragstart()
-	this:StartMoving()
+local function dragstart(self)
+	self:StartMoving()
 end
-local function dragstop()
-	ClassTimer.db.profile.Units[this.unit].x = this:GetLeft()
-	ClassTimer.db.profile.Units[this.unit].y = this:GetBottom()
-	this:StopMovingOrSizing()
+local function dragstop(self)
+	ClassTimer.db.profile.Units[self.unit].x = self:GetLeft()
+	ClassTimer.db.profile.Units[self.unit].y = self:GetBottom()
+	self:StopMovingOrSizing()
 end
 local function getColor(info)
 	return unpack(ClassTimer.db.profile.Units[info.arg[1]][info.arg[2]])
