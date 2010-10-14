@@ -17,6 +17,7 @@ return {
 		GetSpellInfo(339), -- Entangling Roots
 		GetSpellInfo(2637), -- Hibernate
 		GetSpellInfo(5570), -- Insect Swarm
+        GetSpellInfo(93402), -- Sunfire
 		(GetSpellInfo(8921)), -- Moonfire --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Feral = {
