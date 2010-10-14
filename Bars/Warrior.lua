@@ -10,6 +10,7 @@ return {
 		GetSpellInfo(23881), -- Bloodthirst
 		GetSpellInfo(469), -- Commanding Shout
 		GetSpellInfo(12292), -- Death Wish
+        GetSpellInfo(20502), -- Executioner
 		GetSpellInfo(29801), -- Rampage
 		GetSpellInfo(1719), -- Recklessness
 		GetSpellInfo(20230), -- Retaliation
