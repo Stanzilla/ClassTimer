@@ -10,17 +10,18 @@ return {
 		GetSpellInfo(1122), -- Inferno
 		GetSpellInfo(30299), -- Nether Protection
 		GetSpellInfo(17941), -- Shadow Trance
-      GetSpellInfo(63321), -- Glyph of Life Tap
+        GetSpellInfo(63321), -- Glyph of Life Tap
 		GetSpellInfo(32394), -- Shadow Embrace
 		GetSpellInfo(63156), -- Decimation
-      GetSpellInfo(47245), -- Molten Core
+        GetSpellInfo(47245), -- Molten Core
 		(GetSpellInfo(17794)), -- Shadow Vulnerability --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Curses = {
-		GetSpellInfo(980), -- Curse of Agony
-		GetSpellInfo(603), -- Curse of Doom
+		GetSpellInfo(980), -- Bane of Agony
+		GetSpellInfo(603), -- Bane of Doom
 		GetSpellInfo(18223), -- Curse of Exhaustion
-		GetSpellInfo(1490), -- Curse of the Elements
+        GetSpellInfo(85455), -- Bane of Havoc
+		GetSpellInfo(86105), -- Jinx: Curse of the Elements
 		GetSpellInfo(1714), -- Curse of Tongues
 		(GetSpellInfo(702)), -- Curse of Weakness --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
