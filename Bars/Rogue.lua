@@ -12,6 +12,7 @@ return {
 		GetSpellInfo(5277), -- Evasion
 		GetSpellInfo(14278), -- Ghostly Strike
 		GetSpellInfo(14144), -- Remorseless
+        GetSpellInfo(73651), -- Recuperate
 		GetSpellInfo(36554), -- Shadowstep
 		GetSpellInfo(5171), -- Slice and Dice
 		GetSpellInfo(2983), -- Sprint
@@ -30,22 +31,8 @@ return {
 	Poisons = {
 		GetSpellInfo(44289), -- Crippling Poison
 		GetSpellInfo(41190), -- Mind-numbing Poison
-		GetSpellInfo(2818), -- Deadly Poison
-		GetSpellInfo(2819), -- Deadly Poison II
-		GetSpellInfo(11353), -- Deadly Poison III
-		GetSpellInfo(11354), -- Deadly Poison IV
-		GetSpellInfo(25349), -- Deadly Poison V
-		GetSpellInfo(26968), -- Deadly Poison VI
-		GetSpellInfo(27187), -- Deadly Poison VII
-		GetSpellInfo(57969), -- Deadly Poison VIII
-		GetSpellInfo(57970), -- Deadly Poison IX
-		GetSpellInfo(13218), -- Wound Poison
-		GetSpellInfo(13222), -- Wound Poison II
-		GetSpellInfo(13223), -- Wound Poison III
-		GetSpellInfo(13224), -- Wound Poison IV
-		GetSpellInfo(27189), -- Wound Poison V
-		GetSpellInfo(57974), -- Wound Poison VI
-		(GetSpellInfo(57975)), -- Wound Poison VII --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+		GetSpellInfo(2823), -- Deadly Poison
+		(GetSpellInfo(13219)), -- Wound Poison --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {
 		GetSpellInfo(31124), -- Blade Twisting

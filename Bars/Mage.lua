@@ -22,6 +22,8 @@ return {
 		GetSpellInfo(2120), -- Flamestrike
 		GetSpellInfo(11119), -- Ignite
 		GetSpellInfo(11366), -- Pyroblast
+        GetSpellInfo(92315), -- Pyroblast!
+        GetSpellInfo(11129), -- Combustion
         GetSpellInfo(44457), -- Living Bomb
 		(GetSpellInfo(11180)), -- Winter's Chill --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
@@ -41,6 +43,7 @@ return {
 		GetSpellInfo(12042), -- Arcane Power
 		GetSpellInfo(12472), -- Icy Veins
 		GetSpellInfo(48108), -- Hot Streak
+        GetSpellInfo(64343), -- Impact
 		GetSpellInfo(44401), -- Missile Barrage
 		GetSpellInfo(44543), -- Fingers of Frost
 		GetSpellInfo(57761), -- FireBall!

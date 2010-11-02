@@ -24,7 +24,6 @@ return {
 	},
 	Talents = {
 		GetSpellInfo(19184), -- Entrapment
-		GetSpellInfo(19434), -- Aimed Shot
 		GetSpellInfo(19574), -- Bestial Wrath
 		GetSpellInfo(34455), -- Ferocious Inspiration
 		GetSpellInfo(19615), -- Frenzy Effect
