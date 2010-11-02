@@ -25,7 +25,7 @@ return {
 	DOTs = {
 		GetSpellInfo(703), -- Garrote
 		GetSpellInfo(8647), -- Expose Armor
-        GetSPellInfo(79140), -- Vendetta
+        GetSpellInfo(79140), -- Vendetta
 		(GetSpellInfo(1943)), -- Rupture --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Poisons = {
