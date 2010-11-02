@@ -5,6 +5,7 @@ end
 function ClassTimer:CreateTimers()
 return {
 	Buffs = {
+        GetSpellInfo(588), --Inner Fire
         GetSpellInfo(47585), -- Dispersion
         GetSpellInfo(77487), --Shadow Orbs
         GetSpellInfo(81301), -- Glyph of Spirit Tap
