@@ -10,7 +10,7 @@ return {
 		GetSpellInfo(6940), -- Hand of Sacrifice
 		GetSpellInfo(1038), -- Hand of Salvation
 		GetSpellInfo(20217), -- Blessing of Kings
-		GetSpellInfo(19740)), -- Blessing of Might -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+		(GetSpellInfo(19740)), -- Blessing of Might -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Buffs = {
 		GetSpellInfo(31884), -- Avenging Wrath
