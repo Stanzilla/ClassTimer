@@ -19,6 +19,7 @@ return {
 		GetSpellInfo(29723), -- Sudden Death
 		GetSpellInfo(12317), -- Enrage
 		GetSpellInfo(46951), -- Sword and Board
+        GetSpellInfo(1134), -- Inner Rage
 		GetSpellInfo(46916), -- Slam!
 		GetSpellInfo(56636), -- Taste for Blood
 		GetSpellInfo(46856), -- Trauma
