@@ -8,6 +8,9 @@ return {
         GetSpellInfo(588), --Inner Fire
         GetSpellInfo(47585), -- Dispersion
         GetSpellInfo(77487), --Shadow Orbs
+        GetSpellInfo(87118), -- Dark Evangelism
+        GetSpellInfo(95799), -- Empowered Shadow
+        GetSpellInfo(87153), -- Dark Archangel
         GetSpellInfo(81301), -- Glyph of Spirit Tap
         GetSpellInfo(15286), -- Vampiric Embrace
 		GetSpellInfo(14892), -- Inspiration
