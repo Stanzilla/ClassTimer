@@ -21,6 +21,7 @@ return {
 		GetSpellInfo(53601), -- Sacred Shield
         GetSpellInfo(53709), -- Sacred Duty
 		GetSpellInfo(53486), -- The Art of War
+        GetSpellInfo(84963), -- Inquisition
 		GetSpellInfo(54428), -- Divine Plea
 		(GetSpellInfo(20925)), -- Holy Shield -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},

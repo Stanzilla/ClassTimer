@@ -13,11 +13,15 @@ return {
         GetSpellInfo(32394), -- Shadow Embrace
 		GetSpellInfo(63156), -- Decimation
         GetSpellInfo(47245), -- Molten Core
+        GetSpellInfo(80398), -- Dark Intent
+        GetSpellInfo(18119), -- Improved Soul Fire
+        GetSpellInfo(77801), -- Demon Soul
 		(GetSpellInfo(17794)), -- Shadow Vulnerability --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Curses = {
 		GetSpellInfo(980), -- Bane of Agony
 		GetSpellInfo(603), -- Bane of Doom
+        GetSpellInfo(85547), -- Jinx: Curse of the Elements
 		GetSpellInfo(18223), -- Curse of Exhaustion
         GetSpellInfo(85455), -- Bane of Havoc
 		GetSpellInfo(1490), -- Curse of the Elements

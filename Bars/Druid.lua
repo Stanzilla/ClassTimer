@@ -31,6 +31,11 @@ return {
 		GetSpellInfo(33745), -- Lacerate
 		GetSpellInfo(22570), -- Maim
 		GetSpellInfo(9007), -- Pounce Bleed
+        GetSpellInfo(77758), -- Thrash
+        GetSpellInfo(80313), -- Pulverize
+        GetSpellInfo(78892), -- Stampede
+        GetSpellInfo(5209), -- Challenging Roar
+        GetSpellInfo(77761), -- Stampeding Roar
 		GetSpellInfo(1822), -- Rake
 		GetSpellInfo(1079), -- Rip
 		(GetSpellInfo(5217)), -- Tiger's Fury --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
