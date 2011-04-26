@@ -1,4 +1,4 @@
-﻿## Interface: 40000
+﻿## Interface: 40100
 ## Title: ClassTimer
 ## Notes: Timers for Buffs, DOTs, CC effects, etc..
 ## Notes-zhCN: 职业技能计时计
