@@ -25,6 +25,7 @@ return {
 		GetSpellInfo(46856), -- Trauma
         GetSpellInfo(80979), -- Thunderstruck
         GetSpellInfo(12329), -- Meat Cleaver
+        GetSpellInfo(12322), -- Battle Trance
 		(GetSpellInfo(871)), -- Shield Wall --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
