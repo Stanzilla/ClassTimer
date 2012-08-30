@@ -26,6 +26,7 @@ return {
         GetSpellInfo(85455), -- Bane of Havoc
 		GetSpellInfo(1490), -- Curse of the Elements
 		GetSpellInfo(1714), -- Curse of Tongues
+		GetSpellInfo(109466), -- Curse of Enfeeblement
 		(GetSpellInfo(702)), -- Curse of Weakness --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
@@ -34,6 +35,7 @@ return {
 		GetSpellInfo(61290), -- Shadowflame
 		GetSpellInfo(18265), -- Siphon Life
 		GetSpellInfo(27243), -- Seed of Corruption
+		GetSpellInfo(48181), -- Haunt
 		(GetSpellInfo(30108)), -- Unstable Affliction --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Misc = {

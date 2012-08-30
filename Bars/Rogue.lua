@@ -26,13 +26,15 @@ return {
 		GetSpellInfo(703), -- Garrote
 		GetSpellInfo(8647), -- Expose Armor
         GetSpellInfo(79140), -- Vendetta
+		GetSpellInfo(84617), -- Revealing Strike
 		(GetSpellInfo(1943)), -- Rupture --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Poisons = {
-		GetSpellInfo(44289), -- Crippling Poison
-		GetSpellInfo(41190), -- Mind-numbing Poison
+		GetSpellInfo(3408), -- Crippling Poison
+		GetSpellInfo(5761), -- Mind-numbing Poison
 		GetSpellInfo(2823), -- Deadly Poison
-		(GetSpellInfo(13219)), -- Wound Poison --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+		GetSpellInfo(108211), -- Leeching Poison
+		(GetSpellInfo(8679)), -- Wound Poison --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {
 		GetSpellInfo(31124), -- Blade Twisting

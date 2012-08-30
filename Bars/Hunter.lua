@@ -20,6 +20,7 @@ return {
 		GetSpellInfo(19228), -- Improved Wing Clip
 		GetSpellInfo(19577), -- Intimidation
 		GetSpellInfo(19503), -- Scatter Shot
+		GetSpellInfo(117526), -- Binding Shot
 		(GetSpellInfo(2974)), -- Wing Clip --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Talents = {
@@ -55,6 +56,7 @@ return {
 		GetSpellInfo(6150), -- Quick Shots
 		GetSpellInfo(3045), -- Rapid Fire
 		GetSpellInfo(1513), -- Scare Beast
+		GetSpellInfo(131894), -- A Murder of Crows
 		(GetSpellInfo(34490)), -- Silencing Shot --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 }

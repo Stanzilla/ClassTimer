@@ -5,18 +5,13 @@ end
 function ClassTimer:CreateTimers()
 return {
 	Buffs = {
-		GetSpellInfo(1459), -- Arcane Intellect
-		GetSpellInfo(61024), -- Dalaran Intellect
 		GetSpellInfo(23028), -- Arcane Brilliance
 		GetSpellInfo(61316), -- Dalaran Brilliance
-		GetSpellInfo(1008), -- Amplify Magic
-		GetSpellInfo(604), -- Dampen Magic
 		GetSpellInfo(6117), -- Mage Armor
 		GetSpellInfo(30451), -- Arcane Blast
 		(GetSpellInfo(30482)), -- Molten Armor --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
-		GetSpellInfo(22959), -- Improved Scorch
 		GetSpellInfo(133), -- Fireball
         GetSpellInfo(44614), -- Frostfire Bolt 
 		GetSpellInfo(2120), -- Flamestrike
@@ -24,11 +19,13 @@ return {
 		GetSpellInfo(11366), -- Pyroblast
         GetSpellInfo(92315), -- Pyroblast!
         GetSpellInfo(11129), -- Combustion
+		GetSpellInfo(132209), -- Pyromaniac
+		GetSpellInfo(114954), -- Nether Tempest
+		GetSpellInfo(113092), -- Frost Bomb
         GetSpellInfo(44457), -- Living Bomb
 		(GetSpellInfo(11180)), -- Winter's Chill --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {
-		GetSpellInfo(11113), -- Blast Wave
 		GetSpellInfo(120), -- Cone of Cold
 		GetSpellInfo(31661), -- Dragon's Breath
 		GetSpellInfo(168), -- Frost Armor
@@ -46,7 +43,6 @@ return {
         GetSpellInfo(64343), -- Impact
 		GetSpellInfo(44401), -- Missile Barrage
 		GetSpellInfo(44543), -- Fingers of Frost
-		GetSpellInfo(57761), -- FireBall!
 		GetSpellInfo(31589), -- Slow
         GetSpellInfo(12536), -- Clearcasting
 		GetSpellInfo(55342), -- Mirror Image
