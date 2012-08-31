@@ -16,8 +16,7 @@ return {
 	DOTs = {
 		GetSpellInfo(339), -- Entangling Roots
 		GetSpellInfo(2637), -- Hibernate
-		GetSpellInfo(5570), -- Insect Swarm
-        GetSpellInfo(93402), -- Sunfire
+		GetSpellInfo(93402), -- Sunfire
 		(GetSpellInfo(8921)), -- Moonfire --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Feral = {
@@ -25,16 +24,13 @@ return {
 		GetSpellInfo(52610), -- Savage Roar
 		GetSpellInfo(5211), -- Bash
 		GetSpellInfo(5211), -- Dash
-		GetSpellInfo(99), -- Demoralizing Roar
 		GetSpellInfo(5229), -- Enrage
 		GetSpellInfo(22842), -- Frenzied Regeneration
 		GetSpellInfo(33745), -- Lacerate
 		GetSpellInfo(22570), -- Maim
 		GetSpellInfo(9007), -- Pounce Bleed
         GetSpellInfo(77758), -- Thrash
-        GetSpellInfo(80313), -- Pulverize
         GetSpellInfo(78892), -- Stampede
-        GetSpellInfo(5209), -- Challenging Roar
         GetSpellInfo(77761), -- Stampeding Roar
 		GetSpellInfo(1822), -- Rake
 		GetSpellInfo(1079), -- Rip
