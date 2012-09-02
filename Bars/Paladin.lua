@@ -17,7 +17,6 @@ return {
         GetSpellInfo(31850), -- Ardent Defender
 		GetSpellInfo(498), -- Divine Protection
 		GetSpellInfo(642), -- Divine Shield
-		GetSpellInfo(20177), -- Reckoning
 		GetSpellInfo(53601), -- Sacred Shield
         GetSpellInfo(53709), -- Sacred Duty
 		GetSpellInfo(53486), -- The Art of War
@@ -25,15 +24,8 @@ return {
 		GetSpellInfo(54428), -- Divine Plea
 		(GetSpellInfo(20925)), -- Holy Shield -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
-	Judgements = {
-		GetSpellInfo(53407), -- Judgement of Justice
-		GetSpellInfo(20271), -- Judgement of Light
-		GetSpellInfo(53671), -- Judgements of the Pure
-        (GetSpellInfo(31878)), -- Judgements of the Wise  -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-	},
 	Seals = {
 		GetSpellInfo(20165), -- Seal of Insight
-		GetSpellInfo(20164), -- Seal of Justice
 		GetSpellInfo(31801), -- Seal of Truth
 		(GetSpellInfo(20154)), -- Seal of Righteousness -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},

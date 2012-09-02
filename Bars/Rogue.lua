@@ -27,6 +27,8 @@ return {
 		GetSpellInfo(8647), -- Expose Armor
         GetSpellInfo(79140), -- Vendetta
 		GetSpellInfo(84617), -- Revealing Strike
+		GetSpellInfo(121471), -- Shadow Blades
+		GetSpellInfo(121411), -- Crimson Tempest
 		(GetSpellInfo(1943)), -- Rupture --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Poisons = {
@@ -50,6 +52,7 @@ return {
 		GetSpellInfo(26679), -- Deadly Throw
 		GetSpellInfo(16511), -- Hemorrhage
 		GetSpellInfo(51693), -- Waylay
+		GetSpellInfo(113746), -- Weakened Armor
 		GetSpellInfo(51722), -- Dismantle - Disarmed
 		(GetSpellInfo(14251)), -- Riposte --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
