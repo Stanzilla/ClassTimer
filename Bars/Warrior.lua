@@ -10,6 +10,7 @@ return {
 		GetSpellInfo(23881), -- Bloodthirst
 		GetSpellInfo(469), -- Commanding Shout
 		GetSpellInfo(12292), -- Death Wish
+		GetSpellInfo(85730), -- Deadly Calm
         GetSpellInfo(20502), -- Executioner
 		GetSpellInfo(29801), -- Rampage
 		GetSpellInfo(1719), -- Recklessness
@@ -19,9 +20,7 @@ return {
 		GetSpellInfo(29723), -- Sudden Death
 		GetSpellInfo(12317), -- Enrage
 		GetSpellInfo(46951), -- Sword and Board
-        GetSpellInfo(1134), -- Inner Rage
-		GetSpellInfo(46916), -- Slam!
-		GetSpellInfo(56636), -- Taste for Blood
+		GetSpellInfo(56638), -- Taste for Blood
 		GetSpellInfo(46856), -- Trauma
         GetSpellInfo(80979), -- Thunderstruck
         GetSpellInfo(12329), -- Meat Cleaver
