@@ -38,6 +38,7 @@ return {
 		GetSpellInfo(772), -- Rend
 		GetSpellInfo(72), -- Shield Bash
 		GetSpellInfo(7386), -- Sunder Armor
+		GetSpellInfo(115798), -- Weakened Blows 
 		(GetSpellInfo(6343)), -- Thunder Clap --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {
