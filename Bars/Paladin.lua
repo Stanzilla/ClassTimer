@@ -48,6 +48,7 @@ return {
 		GetSpellInfo(20335), -- Heart of the Crusader
 		GetSpellInfo(53380), -- Righteous Vengeance
 		GetSpellInfo(31803), -- Holy Vengeance
+		GetSpellInfo(115798), -- Weakened Blows 
 		(GetSpellInfo(9452)), -- Vindication -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}
 }
