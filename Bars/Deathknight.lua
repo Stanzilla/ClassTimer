@@ -22,10 +22,10 @@ return {
 		GetSpellInfo(63560), -- Ghoul Frenzy (Pet)
         GetSpellInfo(63560), -- Dark Transformation (Pet)
 		(GetSpellInfo(49222)), -- Bone Shield --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-	}
+	},
 	
 	DoTs = {
 		(GetSpellInfo(115798)), -- Weakened Blows 
-	}
+	},
 }
 end
