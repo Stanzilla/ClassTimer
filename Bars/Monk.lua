@@ -15,7 +15,7 @@ return {
 		GetSpellInfo(115798), -- Weakened Blows 
 		(GetSpellInfo(115180)), -- Dizzying Haze --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
-	CC = {
+	Misc = {
 		GetSpellInfo(119381), -- Leg Sweep
 		(GetSpellInfo(115078)), -- Paralysis --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}

@@ -24,7 +24,7 @@ return {
 		(GetSpellInfo(49222)), -- Bone Shield --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	
-	DoTs = {
+	DOTs = {
 		(GetSpellInfo(115798)), -- Weakened Blows 
 	},
 }

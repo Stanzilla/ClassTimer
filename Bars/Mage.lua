@@ -8,6 +8,7 @@ return {
 		GetSpellInfo(23028), -- Arcane Brilliance
 		GetSpellInfo(61316), -- Dalaran Brilliance
 		GetSpellInfo(6117), -- Mage Armor
+		GetSpellInfo(7302), -- Frost Armor
 		GetSpellInfo(30451), -- Arcane Blast
 		(GetSpellInfo(30482)), -- Molten Armor --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
