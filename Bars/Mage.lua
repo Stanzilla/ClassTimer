@@ -1,7 +1,7 @@
-local _, englishClass = UnitClass("player")
-if (englishClass ~="MAGE") then
+if select(2, UnitClass("player")) ~= "MAGE" then
 	return
 end
+
 function ClassTimer:CreateTimers()
 return {
 	Buffs = {

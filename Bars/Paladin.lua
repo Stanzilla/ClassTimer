@@ -1,7 +1,7 @@
-local _, englishClass = UnitClass("player")
-if (englishClass ~= "PALADIN") then
+if select(2, UnitClass("player")) ~= "PALADIN" then
 	return
 end
+
 function ClassTimer:CreateTimers()
 return {
 	Blessings = {

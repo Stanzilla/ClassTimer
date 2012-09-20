@@ -1,20 +1,15 @@
-local _, englishClass = UnitClass("player")
-if (englishClass ~="PRIEST") then
+if select(2, UnitClass("player")) ~= "PRIEST" then
 	return
 end
+
 function ClassTimer:CreateTimers()
 return {
 	Buffs = {
         GetSpellInfo(588), --Inner Fire
         GetSpellInfo(47585), -- Dispersion
-        GetSpellInfo(77487), --Shadow Orbs
         GetSpellInfo(87118), -- Dark Evangelism
-        GetSpellInfo(95799), -- Empowered Shadow
-        GetSpellInfo(87153), -- Dark Archangel
-        GetSpellInfo(81301), -- Glyph of Spirit Tap
         GetSpellInfo(15286), -- Vampiric Embrace
-		GetSpellInfo(14892), -- Inspiration
-        GetSpellInfo(33206), -- Pain Suppression
+		GetSpellInfo(33206), -- Pain Suppression
 		GetSpellInfo(10060), -- Power Infusion
         GetSpellInfo(59887), -- Borrowed Time
         GetSpellInfo(47753), --Divine Aegis

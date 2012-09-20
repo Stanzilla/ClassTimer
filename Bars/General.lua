@@ -12,7 +12,7 @@ return race == "Scourge" and {
 		(GetSpellInfo(20549)), -- War Stomp --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}
 	or race == "Troll" and {
-		(GetSpellInfo(20554)), -- Berserking --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+		(GetSpellInfo(26297)), -- Berserking --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}
 	or race == "BloodElf" and {
 		GetSpellInfo(25046), -- Arcane Torrent
