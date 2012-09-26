@@ -48,6 +48,7 @@ return {
 		GetSpellInfo(19263), -- Deterrence
 		GetSpellInfo(34500), -- Expose Weakness
 		GetSpellInfo(1543), -- Flare
+		GetSpellInfo(82692), -- Focus Fire
 		GetSpellInfo(1130), -- Hunter's Mark
         GetSpellInfo(53243), -- Marked for Death
 		GetSpellInfo(53480), -- Roar of Sacrifice
