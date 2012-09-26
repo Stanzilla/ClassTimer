@@ -107,6 +107,7 @@ L['DOTs'] = true
 L['Misc'] = true
 L['Talents'] = true
 L['Buffs'] = true
+L['Debuffs'] = true
 L['Feral'] = true
 L['Stings'] = true
 L['Traps'] = true
