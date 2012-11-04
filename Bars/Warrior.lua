@@ -15,6 +15,7 @@ return {
 		GetSpellInfo(118038), -- Die by the Sword
 		GetSpellInfo(29834), -- Second Wind
 		GetSpellInfo(2565), -- Shield Block
+		GetSpellInfo(112048), -- Shield Barrier
 		GetSpellInfo(29723), -- Sudden Death
 		GetSpellInfo(12317), -- Enrage
 		GetSpellInfo(46951), -- Sword and Board

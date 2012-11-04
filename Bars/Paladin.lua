@@ -49,6 +49,7 @@ return {
 		GetSpellInfo(53380), -- Righteous Vengeance
 		GetSpellInfo(31803), -- Holy Vengeance
 		GetSpellInfo(115798), -- Weakened Blows 
+		GetSpellInfo(31803), -- Censure
 		(GetSpellInfo(9452)), -- Vindication -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}
 }

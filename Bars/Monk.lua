@@ -9,6 +9,9 @@ return {
 		GetSpellInfo(115213), -- Avert Harm
 		GetSpellInfo(115308), -- Elusive Brew
 		GetSpellInfo(115203), -- Fortifying Brew
+		GetSpellInfo(124682), -- Enveloping Mist
+		GetSpellInfo(115151), -- Renewing Mist
+		GetSpellInfo(115175), -- Soothing Mist
 		(GetSpellInfo(122783)), -- Diffuse Magic  --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Debuffs = {

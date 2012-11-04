@@ -14,6 +14,9 @@ return {
 		GetSpellInfo(63156), -- Decimation
         GetSpellInfo(47245), -- Molten Core
         GetSpellInfo(80398), -- Dark Intent
+        GetSpellInfo(113861), -- Dark Soul: Knowledge
+        GetSpellInfo(113858), -- Dark Soul: Instability
+        GetSpellInfo(113860), -- Dark Soul: Misery
         GetSpellInfo(18119), -- Improved Soul Fire
         GetSpellInfo(77801), -- Demon Soul
 		(GetSpellInfo(17794)), -- Shadow Vulnerability --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
