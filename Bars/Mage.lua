@@ -10,13 +10,15 @@ return {
 		GetSpellInfo(6117), -- Mage Armor
 		GetSpellInfo(7302), -- Frost Armor
 		GetSpellInfo(30451), -- Arcane Blast
+		GetSpellInfo(66), -- Invisiblity
+		GetSpellInfo(12043), -- Presence of Mind
 		(GetSpellInfo(30482)), -- Molten Armor --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
 		GetSpellInfo(133), -- Fireball
         GetSpellInfo(44614), -- Frostfire Bolt 
 		GetSpellInfo(2120), -- Flamestrike
-		GetSpellInfo(11119), -- Ignite
+		GetSpellInfo(12654), -- Ignite
 		GetSpellInfo(11366), -- Pyroblast
         GetSpellInfo(92315), -- Pyroblast!
         GetSpellInfo(11129), -- Combustion
