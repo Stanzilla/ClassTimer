@@ -425,7 +425,7 @@ do
 						stickyset = true
 						t.unitname = UnitName(unit)
 						t.alwaysshown = not ismine and self.db.char.AlwaysShown[name]
-						number = sticky[name..t.unitname] or #sticky+1
+						local number = sticky[name..t.unitname] or #sticky+1
 						sticky[number] = t
 						sticky[name..t.unitname] = number
 					elseif isMine then
@@ -462,7 +462,7 @@ do
 						stickyset = true
 						t.unitname = UnitName(unit)
 						t.alwaysshown = not ismine and self.db.char.AlwaysShown[name]
-						number = sticky[name..t.unitname] or #sticky+1
+						local number = sticky[name..t.unitname] or #sticky+1
 						sticky[number] = t
 						sticky[name..t.unitname] = number
 					elseif isMine then
