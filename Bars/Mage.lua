@@ -12,6 +12,9 @@ return {
 		GetSpellInfo(30451), -- Arcane Blast
 		GetSpellInfo(66), -- Invisiblity
 		GetSpellInfo(12043), -- Presence of Mind
+		GetSpellInfo(116257), -- Invoker's Energy
+		GetSpellInfo(116011), -- Rune of Power
+		GetSpellInfo(1463), -- Incanter's Ward
 		(GetSpellInfo(30482)), -- Molten Armor --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
