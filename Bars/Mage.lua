@@ -3,7 +3,7 @@ if select(2, UnitClass("player")) ~= "MAGE" then
 end
 
 function ClassTimer:CreateTimers()
-return {
+return { 
 	Buffs = {
 		GetSpellInfo(23028), -- Arcane Brilliance
 		GetSpellInfo(61316), -- Dalaran Brilliance
