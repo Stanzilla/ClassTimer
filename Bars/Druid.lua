@@ -1,3 +1,4 @@
+-- GLOBALS: GetSpellInfo
 if select(2, UnitClass("player")) ~= "DRUID" then
 	return
 end
@@ -5,7 +6,7 @@ end
 function ClassTimer:CreateTimers()
 return {
 	Buffs = {
-		GetSpellInfo(2893), -- Abolish Poison
+		-- gone since 4.0: GetSpellInfo(2893), -- Abolish Poison
 		GetSpellInfo(22812), -- Barkskin
 		GetSpellInfo(12536), -- Clearcasting
 		GetSpellInfo(29166), -- Innervate
@@ -24,7 +25,7 @@ return {
 	Feral = {
 		GetSpellInfo(50322), --Survival Instincts
 		GetSpellInfo(52610), -- Savage Roar
-		GetSpellInfo(62606), -- Savage Defense
+		-- gone since 5.0: GetSpellInfo(62606), -- Savage Defense
 		GetSpellInfo(5211), -- Bash
 		GetSpellInfo(5211), -- Dash
 		GetSpellInfo(5229), -- Enrage
@@ -52,13 +53,19 @@ return {
 		GetSpellInfo(48517), -- Eclipse (Solar)
 		GetSpellInfo(48518), -- Eclipse (Lunar)
         GetSpellInfo(69369), -- Predator's Swiftness
+		GetSpellInfo(108294), -- Heart of the Wild
+		GetSpellInfo(106922), -- Might of Ursoc
+		GetSpellInfo(102558), -- Incarnation: Sun of Ursoc
+		GetSpellInfo(102543), -- Incarnation: King of the Jungle
+		GetSpellInfo(102560), -- Incarnation: Chosen of Elune
+		GetSpellInfo(117679), -- Incarnation   (this is the one used for Tree of Life)
 		(GetSpellInfo(16689)), -- Nature's Grasp --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Misc = {
 		GetSpellInfo(33786), -- Cyclone
 		GetSpellInfo(770), -- Faerie Fire
-		GetSpellInfo(2637), -- Hibernate
-		(GetSpellInfo(2908)), -- Soothe Animal --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+		(GetSpellInfo(2637)), -- Hibernate  --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+		-- gone since 4.0: (GetSpellInfo(2908)), -- Soothe Animal --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}
 }
 end
