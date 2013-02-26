@@ -6,27 +6,28 @@ function ClassTimer:CreateTimers()
 return {
 	Buffs = {
 		GetSpellInfo(13750), -- Adrenaline Rush
-        GetSpellInfo(32645), -- Envenom
+        		GetSpellInfo(32645), -- Envenom
 		GetSpellInfo(13877), -- Blade Flurry
+		GetSpellInfo(1966), -- Feint
 		GetSpellInfo(31224), -- Cloak of Shadows
 		GetSpellInfo(5277), -- Evasion
 		GetSpellInfo(14278), -- Ghostly Strike
 		GetSpellInfo(14144), -- Remorseless
-        GetSpellInfo(73651), -- Recuperate
+        		GetSpellInfo(73651), -- Recuperate
 		GetSpellInfo(36554), -- Shadowstep
 		GetSpellInfo(5171), -- Slice and Dice
 		GetSpellInfo(2983), -- Sprint
 		GetSpellInfo(51662), -- Hunger for Blood
 		GetSpellInfo(51713), -- Shadow Dance
 		GetSpellInfo(121471), -- Shadow Blades
-        GetSpellInfo(58426), -- Overkill
+        		GetSpellInfo(58426), -- Overkill
 		GetSpellInfo(51690), --Killing Spree
 		(GetSpellInfo(1856)), -- Vanish --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
 		GetSpellInfo(703), -- Garrote
 		GetSpellInfo(8647), -- Expose Armor
-        GetSpellInfo(79140), -- Vendetta
+        		GetSpellInfo(79140), -- Vendetta
 		GetSpellInfo(84617), -- Revealing Strike
 		GetSpellInfo(121471), -- Shadow Blades
 		GetSpellInfo(121411), -- Crimson Tempest
