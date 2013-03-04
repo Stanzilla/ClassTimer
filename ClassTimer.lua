@@ -99,7 +99,7 @@ do
 				local msg = L['%s has %s left']:format(bar.text:GetText(), bar.timetext:GetText())
 				if UnitInRaid('player') then
 					SendChatMessage(msg, 'RAID')
-				elseif GetNumPartyMembers() > 0 then
+				elseif GetNumSubgroupMembers() > 0 then
 					SendChatMessage(msg, 'PARTY')
 				end
 			end
