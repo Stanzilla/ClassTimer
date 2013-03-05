@@ -41,7 +41,7 @@ return {
 		GetSpellInfo(27243), -- Seed of Corruption
 		GetSpellInfo(48181), -- Haunt
 		GetSpellInfo(47960), -- Shadowflame
-		GetSpellInfo(17962) -- Conflagrate
+		GetSpellInfo(17962), -- Conflagrate
 		GetSpellInfo(689), -- Drain Life
 		GetSpellInfo(80240). -- Havor
 		(GetSpellInfo(30108)), -- Unstable Affliction --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
