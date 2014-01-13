@@ -7,7 +7,7 @@ return {
 	Buffs = {
         GetSpellInfo(588), --Inner Fire
         GetSpellInfo(47585), -- Dispersion
-        GetSpellInfo(87118), -- Dark Evangelism
+        GetSpellInfo(81662), -- Evangelism
         GetSpellInfo(15286), -- Vampiric Embrace
 		GetSpellInfo(33206), -- Pain Suppression
 		GetSpellInfo(10060), -- Power Infusion
