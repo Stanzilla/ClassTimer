@@ -27,6 +27,10 @@ return {
 		GetSpellInfo(51562), -- Tidal Waves
 		GetSpellInfo(131), -- Water Breathing
 		GetSpellInfo(546), -- Water Walking
+		GetSpellInfo(117014), -- Elemental Blast
+		GetSpellInfo(114050), -- Ascendance (Ele)
+		GetSpellInfo(114051), -- Ascendance (Enhance)
+		GetSpellInfo(114052), -- Ascendance (Resto)
 		(GetSpellInfo(30802)), -- Unleashed Rage --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Shocks = {
