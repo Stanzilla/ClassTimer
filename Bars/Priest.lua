@@ -39,7 +39,6 @@ return {
 	Misc = {
 		GetSpellInfo(586), -- Fade
 		GetSpellInfo(1706), -- Levitate
-		GetSpellInfo(453), -- Mind Soothe
 		GetSpellInfo(17), -- Power Word: Shield
         GetSpellInfo(8122), -- Psychic Scream
 		GetSpellInfo(9484), -- Shackle Undead
