@@ -6,28 +6,31 @@ function ClassTimer:CreateTimers()
 return {
 	Buffs = {
 		GetSpellInfo(13750), -- Adrenaline Rush
-        		GetSpellInfo(32645), -- Envenom
+        GetSpellInfo(32645), -- Envenom
 		GetSpellInfo(13877), -- Blade Flurry
 		GetSpellInfo(1966), -- Feint
 		GetSpellInfo(31224), -- Cloak of Shadows
 		GetSpellInfo(5277), -- Evasion
-		GetSpellInfo(14278), -- Ghostly Strike
-		GetSpellInfo(14144), -- Remorseless
-        		GetSpellInfo(73651), -- Recuperate
+        GetSpellInfo(73651), -- Recuperate
 		GetSpellInfo(36554), -- Shadowstep
 		GetSpellInfo(5171), -- Slice and Dice
 		GetSpellInfo(2983), -- Sprint
 		GetSpellInfo(51662), -- Hunger for Blood
 		GetSpellInfo(51713), -- Shadow Dance
 		GetSpellInfo(121471), -- Shadow Blades
-        		GetSpellInfo(58426), -- Overkill
+        GetSpellInfo(58426), -- Overkill
 		GetSpellInfo(51690), --Killing Spree
+		GetSpellInfo(14183), -- Premeditation
+		GetSpellInfo(76577), -- Smoke Bomb
+		GetSpellInfo(84745), -- Shallow Insight
+		GetSpellInfo(84746), -- Moderate Insight
+		GetSpellInfo(84747), -- Deep Insight
 		(GetSpellInfo(1856)), -- Vanish --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
 		GetSpellInfo(703), -- Garrote
 		GetSpellInfo(8647), -- Expose Armor
-        		GetSpellInfo(79140), -- Vendetta
+        GetSpellInfo(79140), -- Vendetta
 		GetSpellInfo(84617), -- Revealing Strike
 		GetSpellInfo(121471), -- Shadow Blades
 		GetSpellInfo(121411), -- Crimson Tempest
@@ -41,7 +44,6 @@ return {
 		(GetSpellInfo(8679)), -- Wound Poison --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {
-		GetSpellInfo(31124), -- Blade Twisting
 		GetSpellInfo(2094), -- Blind
 		GetSpellInfo(1833), -- Cheap Shot
 		GetSpellInfo(1776), -- Gouge
@@ -53,7 +55,6 @@ return {
 		GetSpellInfo(18425), -- Kick - Silenced
 		GetSpellInfo(26679), -- Deadly Throw
 		GetSpellInfo(16511), -- Hemorrhage
-		GetSpellInfo(51693), -- Waylay
 		GetSpellInfo(113746), -- Weakened Armor
 		GetSpellInfo(51722), -- Dismantle - Disarmed
 		(GetSpellInfo(14251)), -- Riposte --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.

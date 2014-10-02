@@ -32,6 +32,7 @@ return {
 		GetSpellInfo(53302), -- Sniper Training
 		GetSpellInfo(56342), -- Lock and Load
 		GetSpellInfo(53301), -- Explosive Shot
+		GetSpellInfo(53224), -- Steady Focus
 		GetSpellInfo(63468), -- Piercing Shots
 		(GetSpellInfo(34692)), -- The Beast Within --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
