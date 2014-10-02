@@ -58,6 +58,7 @@ return {
 		GetSpellInfo(3045), -- Rapid Fire
 		GetSpellInfo(1513), -- Scare Beast
 		GetSpellInfo(131894), -- A Murder of Crows
+		GetSpellInfo(3674), -- Black Arrow
 		(GetSpellInfo(34490)), -- Silencing Shot --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 }
