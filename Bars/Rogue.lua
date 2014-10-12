@@ -15,31 +15,31 @@ return {
 		GetSpellInfo(36554), -- Shadowstep
 		GetSpellInfo(5171), -- Slice and Dice
 		GetSpellInfo(2983), -- Sprint
-		GetSpellInfo(51662), -- Hunger for Blood
 		GetSpellInfo(51713), -- Shadow Dance
 		GetSpellInfo(121471), -- Shadow Blades
         GetSpellInfo(58426), -- Overkill
 		GetSpellInfo(51690), --Killing Spree
-		GetSpellInfo(14183), -- Premeditation
+		GetSpellInfo(114015), --Anticipation
 		GetSpellInfo(76577), -- Smoke Bomb
 		GetSpellInfo(84745), -- Shallow Insight
 		GetSpellInfo(84746), -- Moderate Insight
 		GetSpellInfo(84747), -- Deep Insight
+		GetSpellInfo(156744), -- Shadow Reflection
 		(GetSpellInfo(1856)), -- Vanish --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
 		GetSpellInfo(703), -- Garrote
-		GetSpellInfo(8647), -- Expose Armor
         GetSpellInfo(79140), -- Vendetta
 		GetSpellInfo(84617), -- Revealing Strike
-		GetSpellInfo(121471), -- Shadow Blades
+		GetSpellInfo(112947), -- Nerve Strike
 		GetSpellInfo(121411), -- Crimson Tempest
+		GetSpellInfo(135345), -- Internal Bleeding
 		(GetSpellInfo(1943)), -- Rupture --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Poisons = {
 		GetSpellInfo(3408), -- Crippling Poison
-		GetSpellInfo(5761), -- Mind-numbing Poison
 		GetSpellInfo(2823), -- Deadly Poison
+		GetSpellInfo(157584), -- Instant Poison
 		GetSpellInfo(108211), -- Leeching Poison
 		(GetSpellInfo(8679)), -- Wound Poison --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
@@ -54,10 +54,8 @@ return {
 		GetSpellInfo(1330), -- Garrote - Silence
 		GetSpellInfo(18425), -- Kick - Silenced
 		GetSpellInfo(26679), -- Deadly Throw
-		GetSpellInfo(16511), -- Hemorrhage
-		GetSpellInfo(113746), -- Weakened Armor
-		GetSpellInfo(51722), -- Dismantle - Disarmed
-		(GetSpellInfo(14251)), -- Riposte --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+		GetSpellInfo(166878), -- Deceit -- T17 Combat 4pc proc
+		(GetSpellInfo(16511)), -- Hemorrhage --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 }
 end
