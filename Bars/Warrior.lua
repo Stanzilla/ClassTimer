@@ -9,7 +9,7 @@ return {
 		GetSpellInfo(18499), -- Berserker Rage
 		GetSpellInfo(469), -- Commanding Shout
 		GetSpellInfo(85730), -- Deadly Calm
-        		GetSpellInfo(29801), -- Rampage
+        GetSpellInfo(29801), -- Rampage
 		GetSpellInfo(1719), -- Recklessness
 		GetSpellInfo(118038), -- Die by the Sword
 		GetSpellInfo(1160), -- Demoralizing Shout
@@ -22,18 +22,17 @@ return {
 		GetSpellInfo(46951), -- Sword and Board
 		GetSpellInfo(56638), -- Taste for Blood
 		GetSpellInfo(46856), -- Trauma
-        		GetSpellInfo(12329), -- Meat Cleaver
-        		(GetSpellInfo(871)), -- Shield Wall --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+        GetSpellInfo(12329), -- Meat Cleaver
+        (GetSpellInfo(871)), -- Shield Wall --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
-        		GetSpellInfo(86346), -- Colossus Smash
+        GetSpellInfo(86346), -- Colossus Smash
 		GetSpellInfo(12721), -- Deep Wound
 		GetSpellInfo(1160), -- Demoralizing Shout
 		GetSpellInfo(1715), -- Hamstring
 		GetSpellInfo(12294), -- Mortal Strike
 		GetSpellInfo(64382), -- Shattering Throw
 		GetSpellInfo(6552), -- Pummel	
-		GetSpellInfo(113746), -- Weakened Armor	
 		(GetSpellInfo(115798)), -- Weakened Blows --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Stuns = {

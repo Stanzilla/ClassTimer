@@ -21,7 +21,6 @@ return {
         GetSpellInfo(53709), -- Sacred Duty
 		GetSpellInfo(53486), -- The Art of War
         GetSpellInfo(84963), -- Inquisition
-		GetSpellInfo(54428), -- Divine Plea
 		(GetSpellInfo(20925)), -- Holy Shield -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Seals = {
@@ -48,7 +47,6 @@ return {
 		GetSpellInfo(20335), -- Heart of the Crusader
 		GetSpellInfo(53380), -- Righteous Vengeance
 		GetSpellInfo(31803), -- Holy Vengeance
-		GetSpellInfo(115798), -- Weakened Blows 
 		GetSpellInfo(31803), -- Censure
 		(GetSpellInfo(9452)), -- Vindication -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	}

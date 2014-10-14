@@ -15,11 +15,9 @@ return {
 		GetSpellInfo(61685), -- Charge
 		GetSpellInfo(35100), -- Concussive Barrage
 		GetSpellInfo(5116), -- Concussive Shot
-		GetSpellInfo(19306), -- Counterattack
 		GetSpellInfo(19407), -- Improved Concussive Shot
 		GetSpellInfo(19228), -- Improved Wing Clip
 		GetSpellInfo(19577), -- Intimidation
-		GetSpellInfo(19503), -- Scatter Shot
 		GetSpellInfo(117526), -- Binding Shot
 		(GetSpellInfo(2974)), -- Wing Clip --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
