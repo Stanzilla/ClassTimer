@@ -17,9 +17,9 @@ return {
 	DOTs = {
 		GetSpellInfo(339), -- Entangling Roots
 		GetSpellInfo(2637), -- Hibernate
-		GetSpellInfo(93402), -- Sunfire
+		GetSpellInfo(164815), -- Sunfire
 		GetSpellInfo(115798), -- Weakened Blows 
-		(GetSpellInfo(8921)), -- Moonfire --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+		(GetSpellInfo(164812)), -- Moonfire --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Feral = {
 		GetSpellInfo(50322), --Survival Instincts
