@@ -417,7 +417,7 @@ do
 					break
 				end
                 local isMine = whatsMine[caster] 
-				if duration and duration > 0 and (self.db.profile.Abilities[name] or self.db.char.Custom[name]) and isMine or self.db.char.AlwaysShown[name] then
+				if duration and (self.db.profile.Abilities[name] or self.db.char.Custom[name]) and isMine or self.db.char.AlwaysShown[name] then
 					local t = new()
 					if self.db.profile.Units.sticky.enable and self.db.profile.Sticky[name] then
 						t.startTime = endTime - duration
