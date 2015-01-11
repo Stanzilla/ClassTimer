@@ -5,7 +5,6 @@ end
 function ClassTimer:CreateTimers()
 return {
 	Buffs = {
-        GetSpellInfo(588), --Inner Fire
         GetSpellInfo(47585), -- Dispersion
         GetSpellInfo(81662), -- Evangelism
         GetSpellInfo(15286), -- Vampiric Embrace

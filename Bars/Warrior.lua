@@ -8,8 +8,6 @@ return {
 		GetSpellInfo(6673), -- Battle Shout
 		GetSpellInfo(18499), -- Berserker Rage
 		GetSpellInfo(469), -- Commanding Shout
-		GetSpellInfo(85730), -- Deadly Calm
-        GetSpellInfo(29801), -- Rampage
 		GetSpellInfo(1719), -- Recklessness
 		GetSpellInfo(118038), -- Die by the Sword
 		GetSpellInfo(1160), -- Demoralizing Shout
@@ -32,6 +30,7 @@ return {
 		GetSpellInfo(1715), -- Hamstring
 		GetSpellInfo(12294), -- Mortal Strike
 		GetSpellInfo(64382), -- Shattering Throw
+		GetSpellInfo(772), -- Rend
 		GetSpellInfo(6552), -- Pummel	
 		(GetSpellInfo(115798)), -- Weakened Blows --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},

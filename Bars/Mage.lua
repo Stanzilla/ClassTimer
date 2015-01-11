@@ -7,8 +7,6 @@ return {
 	Buffs = {
 		GetSpellInfo(23028), -- Arcane Brilliance
 		GetSpellInfo(61316), -- Dalaran Brilliance
-		GetSpellInfo(6117), -- Mage Armor
-		GetSpellInfo(7302), -- Frost Armor
 		GetSpellInfo(30451), -- Arcane Blast
 		GetSpellInfo(66), -- Invisiblity
 		GetSpellInfo(12043), -- Presence of Mind
@@ -40,7 +38,6 @@ return {
 		GetSpellInfo(11071), -- Frostbite
 		GetSpellInfo(116), -- Frostbolt
 		GetSpellInfo(11103), -- Impact
-		GetSpellInfo(11185), -- Improved Blizzard
 		(GetSpellInfo(11175)), -- Permafrost --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Talents = {
@@ -51,7 +48,6 @@ return {
 		GetSpellInfo(44401), -- Missile Barrage
 		GetSpellInfo(44543), -- Fingers of Frost
 		GetSpellInfo(31589), -- Slow
-        GetSpellInfo(12536), -- Clearcasting
 		GetSpellInfo(55342), -- Mirror Image
 		(GetSpellInfo(11255)), -- Improved Counterspell --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
