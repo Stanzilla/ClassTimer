@@ -55,6 +55,8 @@ return {
 		GetSpellInfo(136), -- Mend Pet
 		GetSpellInfo(6150), -- Quick Shots
 		GetSpellInfo(3045), -- Rapid Fire
+		GetSpellInfo(168811), -- Sniper Training
+		GetSpellInfo(168809), -- ST. Recently Moved
 		GetSpellInfo(1513), -- Scare Beast
 		GetSpellInfo(131894), -- A Murder of Crows
 		GetSpellInfo(3674), -- Black Arrow

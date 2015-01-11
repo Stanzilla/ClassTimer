@@ -10,6 +10,7 @@ return {
 		GetSpellInfo(13877), -- Blade Flurry
 		GetSpellInfo(1966), -- Feint
 		GetSpellInfo(31224), -- Cloak of Shadows
+		GetSpellInfo(74001), -- Combat Readiness
 		GetSpellInfo(5277), -- Evasion
         GetSpellInfo(73651), -- Recuperate
 		GetSpellInfo(36554), -- Shadowstep
