@@ -12,6 +12,7 @@ return {
 		GetSpellInfo(33763), -- Lifebloom
 		GetSpellInfo(8936), -- Regrowth
 		GetSpellInfo(100977), -- Harmony 
+		GetSpellInfo(155777), -- Rejuv (Germination)
 		(GetSpellInfo(774)), -- Rejuvenation --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
