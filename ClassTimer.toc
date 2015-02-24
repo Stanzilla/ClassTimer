@@ -1,4 +1,4 @@
-﻿## Interface: 60000
+﻿## Interface: 60100
 ## Title: ClassTimer
 ## Notes: Timers for Buffs, DOTs, CC effects, etc..
 ## Notes-zhCN: 职业技能计时计
@@ -6,7 +6,7 @@
 ## Notes-ruRU: Таймеры для  баффов, DOTs, CC эффектов, и т.д.
 ## Author: Ominous
 ## SavedVariables: ClassTimerDB
-## Version: 2.3
+## Version: @project-version@
 ## OptionalDeps: Ace3, Expo, LibSharedMedia-3.0 
 
 ## X-Credits: Nymbia
