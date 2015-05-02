@@ -5,39 +5,23 @@ end
 function ClassTimer:CreateTimers()
 return {
 	Buffs = {
-		GetSpellInfo(34935), -- Backlash
 		GetSpellInfo(1098), -- Enslave Demon
-		GetSpellInfo(1122), -- Inferno
-		GetSpellInfo(30299), -- Nether Protection
-		GetSpellInfo(17941), -- Shadow Trance
-        GetSpellInfo(32394), -- Shadow Embrace
-		GetSpellInfo(63156), -- Decimation
-        GetSpellInfo(47245), -- Molten Core
-        GetSpellInfo(80398), -- Dark Intent
+		GetSpellInfo(1122), -- Summon Infernal
+		GetSpellInfo(17941), -- Nightfall
+        GetSpellInfo(140074), -- Molten Core
         GetSpellInfo(113861), -- Dark Soul: Knowledge
         GetSpellInfo(113858), -- Dark Soul: Instability
         GetSpellInfo(113860), -- Dark Soul: Misery
-        GetSpellInfo(18119), -- Improved Soul Fire
-        GetSpellInfo(77801), -- Demon Soul
-        GetSpellInfo(6229), -- Twilight Ward
 		(GetSpellInfo(17794)), -- Shadow Vulnerability --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Curses = {
-		GetSpellInfo(980), -- Bane of Agony
-		GetSpellInfo(603), -- Bane of Doom
-        GetSpellInfo(85547), -- Jinx: Curse of the Elements
-		GetSpellInfo(18223), -- Curse of Exhaustion
-        GetSpellInfo(85455), -- Bane of Havoc
-		GetSpellInfo(1490), -- Curse of the Elements
-		GetSpellInfo(1714), -- Curse of Tongues
-		GetSpellInfo(109466), -- Curse of Enfeeblement
-		(GetSpellInfo(702)), -- Curse of Weakness --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+		GetSpellInfo(980), -- Agony
+		(GetSpellInfo(603)), -- Doom --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
 		GetSpellInfo(172), -- Corruption
 		GetSpellInfo(44518), -- Immolate
 		GetSpellInfo(61290), -- Shadowflame
-		GetSpellInfo(18265), -- Siphon Life
 		GetSpellInfo(27243), -- Seed of Corruption
 		GetSpellInfo(48181), -- Haunt
 		GetSpellInfo(47960), -- Shadowflame
@@ -45,14 +29,13 @@ return {
 		GetSpellInfo(124480), -- Conflag, green
 		GetSpellInfo(124481), -- Conflag, green, ae
 		GetSpellInfo(689), -- Drain Life
-		GetSpellInfo(80240), -- Havor
+		GetSpellInfo(80240), -- Havoc
 		(GetSpellInfo(30108)), -- Unstable Affliction --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Misc = {
-		GetSpellInfo(18288), -- Amplify Curse
 		GetSpellInfo(710), -- Banish
 		GetSpellInfo(48184), --Haunt
-		GetSpellInfo(6789), -- Death Coil
+		GetSpellInfo(6789), -- Mortal Coil
 		GetSpellInfo(5782), -- Fear
 		GetSpellInfo(5484), -- Howl of Terror
 		GetSpellInfo(29893), -- Ritual of Souls
