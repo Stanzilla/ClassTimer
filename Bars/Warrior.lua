@@ -16,11 +16,14 @@ return {
 		GetSpellInfo(112048), -- Shield Barrier
 		GetSpellInfo(29723), -- Sudden Death
 		GetSpellInfo(12975), -- Last Stand
-		GetSpellInfo(12317), -- Enrage
+		GetSpellInfo(12880), -- Enrage
 		GetSpellInfo(46951), -- Sword and Board
 		GetSpellInfo(56638), -- Taste for Blood
 		GetSpellInfo(46856), -- Trauma
         GetSpellInfo(12329), -- Meat Cleaver
+        GetSpellInfo(107574), -- Avatar
+        GetSpellInfo(12292), -- Bloodbath
+        GetSpellInfo(169685), -- Unyielding Strikes
         (GetSpellInfo(871)), -- Shield Wall --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {

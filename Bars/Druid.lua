@@ -36,6 +36,7 @@ return {
         GetSpellInfo(77758), -- Thrash
         GetSpellInfo(78892), -- Stampede
         GetSpellInfo(77761), -- Stampeding Roar
+        GetSpellInfo(62606), -- Savage Defense
 		GetSpellInfo(1822), -- Rake
 		GetSpellInfo(1079), -- Rip
 		(GetSpellInfo(5217)), -- Tiger's Fury --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
@@ -54,6 +55,7 @@ return {
 		GetSpellInfo(48518), -- Eclipse (Lunar)
         GetSpellInfo(69369), -- Predator's Swiftness
 		GetSpellInfo(108294), -- Heart of the Wild
+		GetSpellInfo(124974), -- Nature's Vigil
 		GetSpellInfo(106922), -- Might of Ursoc
 		GetSpellInfo(102558), -- Incarnation: Sun of Ursoc
 		GetSpellInfo(102543), -- Incarnation: King of the Jungle
