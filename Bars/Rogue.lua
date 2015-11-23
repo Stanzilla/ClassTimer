@@ -33,10 +33,9 @@ return {
         GetSpellInfo(79140), -- Vendetta
 		GetSpellInfo(84617), -- Revealing Strike
 		GetSpellInfo(112947), -- Nerve Strike
-		GetSpellInfo(2823), -- Deadly Poison
-		GetSpellInfo(108211), -- Leeching Poison
-		GetSpellInfo(8679), -- -- Wound Poison
-		GetSpellInfo(3408), -- Crippling Poison
+		GetSpellInfo(2818), -- Deadly Poison
+		GetSpellInfo(8680), -- -- Wound Poison
+		GetSpellInfo(3409), -- Crippling Poison
 		GetSpellInfo(157584), -- Instant Poison
 		GetSpellInfo(121411), -- Crimson Tempest
 		GetSpellInfo(135345), -- Internal Bleeding
