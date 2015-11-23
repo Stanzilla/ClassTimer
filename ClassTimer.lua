@@ -23,7 +23,7 @@ local ipairs = _G.ipairs
 local UnitIsUnit = _G.UnitIsUnit
 
 local _, enClass = UnitClass("player")
-local hasPet = enClass=="HUNTER" or enClass=="WARLOCK" or enClass=="DEATHKNIGHT" or enClass=="MAGE" and true
+local hasPet = enClass=="HUNTER" or enClass=="WARLOCK" or enClass=="DEATHKNIGHT" or enClass=="MAGE" or enClass=="SHAMAN" and true
 local unlocked = {}
 local sticky = {}
 ClassTimer.unlocked = unlocked
@@ -415,6 +415,9 @@ do
                 local name, _, texture, count, _, duration, endTime, caster = UnitBuff(unit, i)
                 if not name then
 					break
+				end
+				if caster == nil then 
+					caster = player
 				end
                 local isMine = whatsMine[caster] 
 				if duration and (self.db.profile.Abilities[name] or self.db.char.Custom[name]) and isMine or self.db.char.AlwaysShown[name] then
