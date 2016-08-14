@@ -5,20 +5,17 @@ end
 function ClassTimer:CreateTimers()
 return {
 	Buffs = {
-		GetSpellInfo(23028), -- Arcane Brilliance
-		GetSpellInfo(61316), -- Dalaran Brilliance
 		GetSpellInfo(30451), -- Arcane Blast
 		GetSpellInfo(66), -- Invisiblity
 		GetSpellInfo(12043), -- Presence of Mind
 		GetSpellInfo(116257), -- Invoker's Energy
-		--GetSpellInfo(116011), -- Rune of Power
+		GetSpellInfo(116011), -- Rune of Power
 		GetSpellInfo(1463), -- Incanter's Ward
 		GetSpellInfo(116267), -- Incanter's Absorbtion
 		(GetSpellInfo(30482)), -- Molten Armor --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
 		GetSpellInfo(133), -- Fireball
-        GetSpellInfo(44614), -- Frostfire Bolt 
 		GetSpellInfo(2120), -- Flamestrike
 		GetSpellInfo(12654), -- Ignite
 		GetSpellInfo(11366), -- Pyroblast
@@ -37,7 +34,6 @@ return {
 		GetSpellInfo(122), -- Frost Nova
 		GetSpellInfo(11071), -- Frostbite
 		GetSpellInfo(116), -- Frostbolt
-		GetSpellInfo(11103), -- Impact
 		(GetSpellInfo(11175)), -- Permafrost --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Talents = {
