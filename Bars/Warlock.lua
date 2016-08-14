@@ -9,9 +9,6 @@ return {
 		GetSpellInfo(1122), -- Summon Infernal
 		GetSpellInfo(17941), -- Nightfall
         GetSpellInfo(140074), -- Molten Core
-        GetSpellInfo(113861), -- Dark Soul: Knowledge
-        GetSpellInfo(113858), -- Dark Soul: Instability
-        GetSpellInfo(113860), -- Dark Soul: Misery
 		(GetSpellInfo(17794)), -- Shadow Vulnerability --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Curses = {
