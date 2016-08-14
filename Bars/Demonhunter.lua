@@ -4,8 +4,8 @@ end
 
 function ClassTimer:CreateTimers()
 return {
-	Buffs = {
-		GetSpellInfo(188501), -- Spectral Sight 
+    Buffs = {
+        GetSpellInfo(188501), -- Spectral Sight
         GetSpellInfo(203551),
         GetSpellInfo(191427),
         GetSpellInfo(206476),
@@ -19,6 +19,9 @@ return {
         GetSpellInfo(178740),
         GetSpellInfo(217832),
         (GetSpellInfo(187827)), --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-	},
+    },
+    Stuns = {
+        (GetSpellInfo(179057)), -- Chaos Nova
+    }
 }
 end
