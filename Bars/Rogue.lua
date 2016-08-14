@@ -19,26 +19,29 @@ return {
 		GetSpellInfo(51713), -- Shadow Dance
 		GetSpellInfo(121471), -- Shadow Blades
         GetSpellInfo(58426), -- Overkill
-		GetSpellInfo(51690), --Killing Spree
-		GetSpellInfo(114015), --Anticipation
-		GetSpellInfo(76577), -- Smoke Bomb
-		GetSpellInfo(84745), -- Shallow Insight
-		GetSpellInfo(84746), -- Moderate Insight
-		GetSpellInfo(84747), -- Deep Insight
+		GetSpellInfo(51690), -- Killing Spree
+		GetSpellInfo(114015), -- Anticipation
 		GetSpellInfo(156744), -- Shadow Reflection
+		GetSpellInfo(199603), -- Jolly Roger
+		GetSpellInfo(193358), -- Grand Melee
+		GetSpellInfo(193357), -- Shark Infested Waters
+		GetSpellInfo(193359), -- True Bearing
+		GetSpellInfo(199600), -- Buried Treasure
+		GetSpellInfo(193356), -- Broadsides
+		GetSpellInfo(195627), -- Opportunity
+		GetSpellInfo(199754), -- Riposte
+		GetSpellInfo(185311), -- Crimson Vial
 		(GetSpellInfo(1856)), -- Vanish --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	DOTs = {
 		GetSpellInfo(703), -- Garrote
         GetSpellInfo(79140), -- Vendetta
-		GetSpellInfo(84617), -- Revealing Strike
-		GetSpellInfo(112947), -- Nerve Strike
 		GetSpellInfo(2818), -- Deadly Poison
 		GetSpellInfo(8680), -- -- Wound Poison
 		GetSpellInfo(3409), -- Crippling Poison
 		GetSpellInfo(157584), -- Instant Poison
-		GetSpellInfo(121411), -- Crimson Tempest
 		GetSpellInfo(135345), -- Internal Bleeding
+		GetSpellInfo(196937), -- Ghostly Strike
 		(GetSpellInfo(1943)), -- Rupture --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 	Poisons = {
