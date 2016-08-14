@@ -38,13 +38,7 @@ return {
 		GetSpellInfo(73682), -- Unleash Frost
 		GetSpellInfo(8042), -- Earth Shock
 		GetSpellInfo(8050), -- Flame Shock
-		GetSpellInfo(115798), -- Weakened Blows 
 		(GetSpellInfo(8056)), -- Frost Shock --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-	},
-	Shields = {
-		GetSpellInfo(324), --Lightning Shield
-		GetSpellInfo(974), --Earth Shield
-		(GetSpellInfo(52127)), --Water Shield -Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
 }
 end
