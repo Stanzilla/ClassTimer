@@ -6,7 +6,6 @@ function ClassTimer:CreateTimers()
 return {
 	Misc = {
 		GetSpellInfo(51271), -- Unbreakable Armor
-		GetSpellInfo(49039), -- Lichborne
 		GetSpellInfo(48792), -- Icebound Fortitude
 		GetSpellInfo(55095), -- Frost Fever
         GetSpellInfo(81131), -- Scarlet Fever
@@ -16,16 +15,17 @@ return {
 		GetSpellInfo(51726), -- Ebon Plague
 		GetSpellInfo(59052), -- Freezing Fog
 		GetSpellInfo(51123), -- Killing Machine
-		GetSpellInfo(57330), -- Horn of Winter
         GetSpellInfo(49182), -- Blade Barrier
         GetSpellInfo(55233), -- Vampiric Blood
 		GetSpellInfo(63560), -- Ghoul Frenzy (Pet)
         GetSpellInfo(63560), -- Dark Transformation (Pet)
 		(GetSpellInfo(49222)), -- Bone Shield --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
 	},
-	
+
 	DOTs = {
-		(GetSpellInfo(115798)), -- Weakened Blows 
+		GetSpellInfo(191587), -- Virulent Plague
+		GetSpellInfo(197147), -- Festering Wound
+		(GetSpellInfo(115798)), -- Weakened Blows
 	},
 }
 end
