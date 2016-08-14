@@ -1,20 +1,25 @@
 local sm = LibStub("LibSharedMedia-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("ClassTimer", true)
 
+-- GLOBALS: ClassTimer CONFIGMODE_CALLBACKS
+
 local bars = ClassTimer.bars
 local unlocked = ClassTimer.unlocked
 
 local function dragstart(self)
 	self:StartMoving()
 end
+
 local function dragstop(self)
 	ClassTimer.db.profile.Units[self.unit].x = self:GetLeft()
 	ClassTimer.db.profile.Units[self.unit].y = self:GetBottom()
 	self:StopMovingOrSizing()
 end
+
 local function getColor(info)
 	return unpack(ClassTimer.db.profile.Units[info.arg[1]][info.arg[2]])
 end
+
 local function setColor(info, ...)
 	if info.arg[1] == "general" then
 		for k in pairs(bars) do

@@ -7,7 +7,7 @@
 ## Author: Ominous
 ## SavedVariables: ClassTimerDB
 ## Version: @project-version@
-## OptionalDeps: Ace3, Expo, LibSharedMedia-3.0 
+## OptionalDeps: Ace3, Expo, LibSharedMedia-3.0
 
 ## X-Credits: Nymbia
 ## X-Category: Combat
