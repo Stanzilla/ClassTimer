@@ -339,7 +339,7 @@ function ClassTimer:OnEnable()
 	self:RegisterBucketEvent('UNIT_AURA', 0.25, 'UNIT_AURA')
 	self:RegisterEvent('PLAYER_TARGET_CHANGED')
 	self:RegisterEvent('PLAYER_FOCUS_CHANGED')
-	self:RegisterEvent('PLAYER_PET_CHANGED')
+	self:RegisterEvent('UNIT_PET')
 end
 
 function ClassTimer:OnDisable()
@@ -358,7 +358,7 @@ function ClassTimer:PLAYER_FOCUS_CHANGED()
 	self:UpdateUnitBars('focus')
 end
 
-function ClassTimer:PLAYER_PET_CHANGED()
+function ClassTimer:UNIT_PET()
 	self:UpdateUnitBars('pet')
 end
 
