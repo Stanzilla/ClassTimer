@@ -28,6 +28,25 @@ local unlocked = {}
 local sticky = {}
 ClassTimer.unlocked = unlocked
 
+local UnitAura = UnitAura
+-- Unit Aura functions that return info about the first Aura matching the spellName or spellID given on the unit.
+local CT_GetUnitAura = function(unit, spell, filter)
+    for i = 1, 40 do
+        local name, _, _, _, _, _, _, _, _, spellId = UnitAura(unit, i, filter)
+        if not name then return end
+        if spell == spellId or spell == name then
+            return UnitAura(unit, i, filter)
+        end
+    end
+end
+local CT_GetUnitBuff = function(unit, spell, filter)
+    return CT_GetUnitAura(unit, spell, filter)
+end
+local CT_GetUnitDebuff = function(unit, spell, filter)
+    filter = filter and filter.."|HARMFUL" or "HARMFUL"
+    return CT_GetUnitAura(unit, spell, filter)
+end
+
 local new, del
 do
 	local cache = setmetatable({}, {__mode='k'})
@@ -412,14 +431,14 @@ do
 		if db.buffs then
 			local i=1
 			while true do
-                local name, _, texture, count, _, duration, endTime, caster = UnitBuff(unit, i)
+                local name, _, texture, count, _, duration, endTime, caster = CT_GetUnitBuff(unit, i)
                 if not name then
 					break
 				end
-				if caster == nil then 
+				if caster == nil then
 					caster = player
 				end
-                local isMine = whatsMine[caster] 
+                local isMine = whatsMine[caster]
 				if duration and (self.db.profile.Abilities[name] or self.db.char.Custom[name]) and isMine or self.db.char.AlwaysShown[name] then
 					local t = new()
 					if self.db.profile.Units.sticky.enable and self.db.profile.Sticky[name] then
@@ -452,7 +471,7 @@ do
 		if db.debuffs then
 			local i=1
 			while true do
-                local name, _, texture, count, debuffType, duration, endTime, caster = UnitDebuff(unit, i)
+                local name, _, texture, count, debuffType, duration, endTime, caster = CT_GetUnitDebuff(unit, i)
                 if not name then
 					break
 				end
