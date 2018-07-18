@@ -28,25 +28,6 @@ local unlocked = {}
 local sticky = {}
 ClassTimer.unlocked = unlocked
 
-local UnitAura = UnitAura
--- Unit Aura functions that return info about the first Aura matching the spellName or spellID given on the unit.
-local CT_GetUnitAura = function(unit, spell, filter)
-    for i = 1, 40 do
-        local name, _, _, _, _, _, _, _, _, spellId = UnitAura(unit, i, filter)
-        if not name then return end
-        if spell == spellId or spell == name then
-            return UnitAura(unit, i, filter)
-        end
-    end
-end
-local CT_GetUnitBuff = function(unit, spell, filter)
-    return CT_GetUnitAura(unit, spell, filter)
-end
-local CT_GetUnitDebuff = function(unit, spell, filter)
-    filter = filter and filter.."|HARMFUL" or "HARMFUL"
-    return CT_GetUnitAura(unit, spell, filter)
-end
-
 local new, del
 do
 	local cache = setmetatable({}, {__mode='k'})
@@ -430,8 +411,8 @@ do
 		local currentTime = GetTime()
 		if db.buffs then
 			local i=1
-			while true do
-                local name, _, texture, count, _, duration, endTime, caster = CT_GetUnitBuff(unit, i)
+            while true do
+                local name, texture, count, _, duration, endTime, caster = UnitBuff(unit, i)
                 if not name then
 					break
 				end
@@ -471,7 +452,7 @@ do
 		if db.debuffs then
 			local i=1
 			while true do
-                local name, _, texture, count, debuffType, duration, endTime, caster = CT_GetUnitDebuff(unit, i)
+                local name, texture, count, debuffType, duration, endTime, caster = UnitDebuff(unit, i)
                 if not name then
 					break
 				end
