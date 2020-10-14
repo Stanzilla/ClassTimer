@@ -108,7 +108,7 @@ do
 
 	local framefactory = {
 		__index = function(t,k)
-			local bar = CreateFrame('StatusBar', nil, UIParent)
+			local bar = CreateFrame('StatusBar', nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			t[k] = bar
 			bar:SetFrameStrata('MEDIUM')
 			bar:Hide()
