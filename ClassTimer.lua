@@ -21,6 +21,7 @@ local gsub = _G.gsub
 local pairs = _G.pairs
 local ipairs = _G.ipairs
 local UnitIsUnit = _G.UnitIsUnit
+local IsClassic = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC)
 
 local _, enClass = UnitClass("player")
 local hasPet = enClass=="HUNTER" or enClass=="WARLOCK" or enClass=="DEATHKNIGHT" or enClass=="MAGE" or enClass=="SHAMAN" and true
@@ -338,7 +339,9 @@ end
 function ClassTimer:OnEnable()
 	self:RegisterBucketEvent('UNIT_AURA', 0.25, 'UNIT_AURA')
 	self:RegisterEvent('PLAYER_TARGET_CHANGED')
-	self:RegisterEvent('PLAYER_FOCUS_CHANGED')
+    if not IsClassic then
+	    self:RegisterEvent('PLAYER_FOCUS_CHANGED')
+    end
 	self:RegisterEvent('PLAYER_PET_CHANGED')
 end
 
