@@ -342,7 +342,7 @@ function ClassTimer:OnEnable()
     if not IsClassic then
 	    self:RegisterEvent('PLAYER_FOCUS_CHANGED')
     end
-	self:RegisterEvent('PLAYER_PET_CHANGED')
+	self:RegisterEvent('UNIT_PET')
 end
 
 function ClassTimer:OnDisable()
@@ -361,7 +361,7 @@ function ClassTimer:PLAYER_FOCUS_CHANGED()
 	self:UpdateUnitBars('focus')
 end
 
-function ClassTimer:PLAYER_PET_CHANGED()
+function ClassTimer:UNIT_PET()
 	self:UpdateUnitBars('pet')
 end
 
