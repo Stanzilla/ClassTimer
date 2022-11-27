@@ -118,7 +118,7 @@ do
 			bar:SetBackdrop({bgFile = 'Interface\\Tooltips\\UI-Tooltip-Background', tile = true, tileSize = 16})
 			bar.text = bar:CreateFontString(nil, 'OVERLAY')
 			bar.timetext = bar:CreateFontString(nil, 'OVERLAY')
-			bar.icon = bar:CreateTexture(nil, 'DIALOG')
+			bar.icon = bar:CreateTexture(nil, 'OVERLAY')
 			bar:SetScript('OnMouseUp', MouseUp)
 
 			local spark = bar:CreateTexture(nil, "OVERLAY")
