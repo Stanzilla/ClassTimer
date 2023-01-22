@@ -6,8 +6,6 @@ Uber credits must be given to nymbia for the metatables and frames, thanks!
 ClassTimer = LibStub("AceAddon-3.0"):NewAddon("ClassTimer", "AceBucket-3.0", "AceConsole-3.0", "AceEvent-3.0")
 
 local ClassTimer = ClassTimer
-
-local AceDB = LibStub("AceDB-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("ClassTimer", true)
 local DataBroker = LibStub:GetLibrary("LibDataBroker-1.1",true)
 local sm = LibStub("LibSharedMedia-3.0")
@@ -158,7 +156,6 @@ ClassTimer.defaults = {
 				showIcons              = false,
 				icons                  = true,
 				iconSide               = 'LEFT',
-				scale                  = 1,
 				spacing                = 0,
 				nametext               = true,
 				timetext               = true,
@@ -196,12 +193,7 @@ ClassTimer.defaults = {
 	}
 }
 
-
 function ClassTimer:OnInitialize()
-	--Remove Ace2 variables
-	if ClassTimerDB and ClassTimerDB.version then
-		ClassTimerDB = nil
-	end
 	if DataBroker then
 		local launcher = DataBroker:NewDataObject("ClassTimer", {
 		type = "launcher",
@@ -213,10 +205,10 @@ function ClassTimer:OnInitialize()
 	end
 	local validate = {}
 	local timerargs = {}
-	local table =  self:CreateTimers()
-	table['Race'] = self:Races()
+	local spellTables =  self:CreateTimers()
+	spellTables['Race'] = self:Races()
 
-	for k, v in pairs(table) do
+	for k, v in pairs(spellTables) do
 		for n in ipairs(v) do
 			ClassTimer.defaults.profile.Abilities[v[n]] = true
 		end
@@ -240,14 +232,6 @@ function ClassTimer:OnInitialize()
 	end
 
 	self.db = LibStub("AceDB-3.0"):New("ClassTimerDB", self.defaults)
-	-- Move the profile-specific Custom timers to the char-specific timers on the first char you log in with
-	if self.db.profile.Custom then
-		print("ClassTimer: Custom timers have changed from being profile to character specific. The profile-specific custom timers have been copied to this characters custom timers.")
-		for k, v in pairs(self.db.profile.Custom) do
-			self.db.char.Custom[k] = k
-		end
-		self.db.profile.Custom = nil
-	end
 	self.options.args.Profiles = LibStub("AceDBOptions-3.0"):GetOptionsTable(ClassTimer.db)
 	timerargs.Spacer = {
 		type = "header",

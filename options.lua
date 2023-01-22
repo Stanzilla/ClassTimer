@@ -139,17 +139,6 @@ ClassTimer.options = {
 	}
 }
 
-CONFIGMODE_CALLBACKS = CONFIGMODE_CALLBACKS or {}
-
-CONFIGMODE_CALLBACKS["ClassTimer"] = function(action, mode)
-   if action == "ON" then
-     ClassTimer.options.args.lock.set(nil, false)
-   elseif action == "OFF" then
-     ClassTimer.options.args.lock.set(nil, true)
-   end
- end
-
-
 function ClassTimer:AddUnitOptions(type)
 	local path = ClassTimer.options.args.BarSettings
 	path.args[type] = {

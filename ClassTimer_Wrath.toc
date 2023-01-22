@@ -1,4 +1,4 @@
-## Interface: 100002
+## Interface: 30401
 ## Title: ClassTimer
 ## Notes: Timers for Buffs, DOTs, CC effects, etc..
 ## Notes-zhCN: 职业技能计时计
@@ -49,6 +49,3 @@ Bars\Shaman.lua
 Bars\Mage.lua
 Bars\General.lua
 Bars\Deathknight.lua
-Bars\Monk.lua
-Bars\Demonhunter.lua
-Bars\Evoker.lua
