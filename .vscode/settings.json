@@ -1,0 +1,26 @@
+{
+  "Lua.diagnostics.globals": [
+    "UnitRace"
+  ],
+  "Lua.runtime.version": "Lua 5.1",
+  "cSpell.words": [
+    "alwaysshowndebuffcolor",
+    "debuff",
+    "debuffcolor",
+    "debuffs",
+    "Dracthyr",
+    "Draenei",
+    "Elune",
+    "growup",
+    "isbuff",
+    "Naaru",
+    "Nymbia",
+    "Pyroblast",
+    "Scorpid",
+    "sortup",
+    "Tauren",
+    "timerargs",
+    "tioptionsm",
+    "Ursoc"
+  ]
+}

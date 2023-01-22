@@ -16,7 +16,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(139), -- Renew
 			GetSpellInfo(63735), -- Serendipity
 			GetSpellInfo(47788), -- Guardian Spirit
-			(GetSpellInfo(33150)), -- Surge of Light  --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(33150)), -- Surge of Light
 		},
 		DOTs = {
 			GetSpellInfo(33076), -- Prayer of Mending
@@ -25,7 +25,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(14914), -- Holy Fire
 			GetSpellInfo(64044), -- Psychic Horror
 			GetSpellInfo(204197), -- Purge the Wicked
-			(GetSpellInfo(34914)), -- Vampiric Touch --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(34914)), -- Vampiric Touch
 		},
 		Misc = {
 			GetSpellInfo(586), -- Fade
@@ -34,7 +34,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(8122), -- Psychic Scream
 			GetSpellInfo(9484), -- Shackle Undead
 			GetSpellInfo(20711), -- Spirit of Redemption
-			(GetSpellInfo(6788)), -- Weakened Soul --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-		}
+			(GetSpellInfo(6788)), -- Weakened Soul
+		},
 	}
 end

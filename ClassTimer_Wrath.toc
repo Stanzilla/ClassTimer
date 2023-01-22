@@ -7,12 +7,11 @@
 ## Author: Ominous
 ## SavedVariables: ClassTimerDB
 ## Version: @project-version@
-## OptionalDeps: Ace3, Expo, LibSharedMedia-3.0
+## OptionalDeps: Ace3, LibSharedMedia-3.0
 
 ## X-Credits: Nymbia
 ## X-Category: Combat
 
-#@no-lib-strip@
 Libs\LibStub\LibStub.lua
 Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
 Libs\AceAddon-3.0\AceAddon-3.0.xml
@@ -27,7 +26,7 @@ Libs\AceEvent-3.0\AceEvent-3.0.xml
 Libs\AceLocale-3.0\AceLocale-3.0.xml
 Libs\LibSharedMedia-3.0\lib.xml
 Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
-#@end-no-lib-strip@
+
 
 Locales\enUS.lua
 Locales\koKR.lua

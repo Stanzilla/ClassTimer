@@ -18,10 +18,10 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(204021),
 			GetSpellInfo(178740),
 			GetSpellInfo(217832),
-			(GetSpellInfo(187827)), --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(187827)),
 		},
 		Stuns = {
 			(GetSpellInfo(179057)), -- Chaos Nova
-		}
+		},
 	}
 end

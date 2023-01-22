@@ -12,7 +12,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(204018), -- Blessing of Spellwarding
 			GetSpellInfo(203538), -- Greater Blessing of Kings
 			GetSpellInfo(203539), -- Greater Blessing of Wisdom
-			(GetSpellInfo(205729)), -- Greater Blessing of Might -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(205729)), -- Greater Blessing of Might
 		},
 		Buffs = {
 			GetSpellInfo(31884), -- Avenging Wrath
@@ -23,11 +23,11 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(53600), -- Shield of the Righteous
 			GetSpellInfo(205656), -- Divine Steed
 			GetSpellInfo(184662), -- Shield of Vengeance
-			(GetSpellInfo(20925)), -- Holy Shield -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(20925)), -- Holy Shield
 		},
 		Stuns = {
 			GetSpellInfo(853), -- Hammer of Justice
-			(GetSpellInfo(20066)), -- Repentance -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(20066)), -- Repentance
 		},
 		Talents = {
 			GetSpellInfo(115750), --Blinding Light
@@ -48,7 +48,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(20049), -- Vengeance
 			GetSpellInfo(20335), -- Heart of the Crusader
 			GetSpellInfo(53380), -- Righteous Vengeance
-			(GetSpellInfo(9452)), -- Vindication -- Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-		}
+			(GetSpellInfo(9452)), -- Vindication
+		},
 	}
 end

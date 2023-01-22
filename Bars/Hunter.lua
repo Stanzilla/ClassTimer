@@ -8,7 +8,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(3043), -- Scorpid Sting
 			GetSpellInfo(1978), -- Serpent Sting
 			GetSpellInfo(3034), -- Viper Sting
-			(GetSpellInfo(19386)), -- Wyvern Sting --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(19386)), -- Wyvern Sting
 		},
 		Stuns = {
 			GetSpellInfo(3385), -- Boar Charge
@@ -19,7 +19,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(19228), -- Improved Wing Clip
 			GetSpellInfo(19577), -- Intimidation
 			GetSpellInfo(117526), -- Binding Shot
-			(GetSpellInfo(2974)), -- Wing Clip --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(2974)), -- Wing Clip
 		},
 		Talents = {
 			GetSpellInfo(19184), -- Entrapment
@@ -32,14 +32,14 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(53301), -- Explosive Shot
 			GetSpellInfo(53224), -- Steady Focus
 			GetSpellInfo(63468), -- Piercing Shots
-			(GetSpellInfo(34692)), -- The Beast Within --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(34692)), -- The Beast Within
 		},
 		Traps = {
 			GetSpellInfo(63668), -- Black Arrow
 			GetSpellInfo(13812), -- Explosive Trap Effect
 			GetSpellInfo(3355), -- Freezing Trap Effect
 			GetSpellInfo(13810), -- Frost Trap Aura
-			(GetSpellInfo(13797)), -- Immolation Trap Effect --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(13797)), -- Immolation Trap Effect
 		},
 		Misc = {
 			GetSpellInfo(1539), -- Feed Pet Effect
@@ -61,7 +61,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(131894), -- A Murder of Crows
 			GetSpellInfo(3674), -- Black Arrow
 			GetSpellInfo(187131), -- Vulnerable
-			(GetSpellInfo(34490)), -- Silencing Shot --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(34490)), -- Silencing Shot
 		},
 	}
 end

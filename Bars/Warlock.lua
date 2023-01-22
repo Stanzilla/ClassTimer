@@ -9,11 +9,11 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(1122), -- Summon Infernal
 			GetSpellInfo(17941), -- Nightfall
 			GetSpellInfo(140074), -- Molten Core
-			(GetSpellInfo(17794)), -- Shadow Vulnerability --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(17794)), -- Shadow Vulnerability
 		},
 		Curses = {
 			GetSpellInfo(980), -- Agony
-			(GetSpellInfo(603)), -- Doom --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(603)), -- Doom
 		},
 		DOTs = {
 			GetSpellInfo(172), -- Corruption
@@ -27,7 +27,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(124481), -- Conflag, green, ae
 			GetSpellInfo(689), -- Drain Life
 			GetSpellInfo(80240), -- Havoc
-			(GetSpellInfo(30108)), -- Unstable Affliction --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(30108)), -- Unstable Affliction
 		},
 		Misc = {
 			GetSpellInfo(710), -- Banish
@@ -38,7 +38,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(29893), -- Ritual of Souls
 			GetSpellInfo(6358), -- Seduction
 			GetSpellInfo(17877), -- Shadowburn
-			(GetSpellInfo(20707)), -- Soulstone Resurrection --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-		}
+			(GetSpellInfo(20707)), -- Soulstone Resurrection
+		},
 	}
 end

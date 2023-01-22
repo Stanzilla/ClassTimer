@@ -31,7 +31,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(195627), -- Opportunity
 			GetSpellInfo(199754), -- Riposte
 			GetSpellInfo(185311), -- Crimson Vial
-			(GetSpellInfo(1856)), -- Vanish --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(1856)), -- Vanish
 		},
 		DOTs = {
 			GetSpellInfo(703), -- Garrote
@@ -42,28 +42,28 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(157584), -- Instant Poison
 			GetSpellInfo(135345), -- Internal Bleeding
 			GetSpellInfo(196937), -- Ghostly Strike
-			(GetSpellInfo(1943)), -- Rupture --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(1943)), -- Rupture
 		},
 		Poisons = {
 			GetSpellInfo(3408), -- Crippling Poison
 			GetSpellInfo(2823), -- Deadly Poison
 			GetSpellInfo(157584), -- Instant Poison
 			GetSpellInfo(108211), -- Leeching Poison
-			(GetSpellInfo(8679)), -- Wound Poison --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(8679)), -- Wound Poison
 		},
 		Stuns = {
 			GetSpellInfo(2094), -- Blind
 			GetSpellInfo(1833), -- Cheap Shot
 			GetSpellInfo(1776), -- Gouge
 			GetSpellInfo(408), -- Kidney Shot
-			(GetSpellInfo(6770)), -- Sap --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(6770)), -- Sap
 		},
 		Misc = {
 			GetSpellInfo(1330), -- Garrote - Silence
 			GetSpellInfo(18425), -- Kick - Silenced
 			GetSpellInfo(26679), -- Deadly Throw
 			GetSpellInfo(166878), -- Deceit -- T17 Combat 4pc proc
-			(GetSpellInfo(16511)), -- Hemorrhage --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(16511)), -- Hemorrhage
 		},
 	}
 end

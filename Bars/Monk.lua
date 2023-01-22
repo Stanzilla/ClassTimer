@@ -24,18 +24,18 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(118864), -- Combo Breaker: Tiger Palm
 			GetSpellInfo(101546), -- Spinning Crane Kick
 			GetSpellInfo(116740), -- Tigereye Brew
-			(GetSpellInfo(122783)), -- Diffuse Magic  --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(122783)), -- Diffuse Magic
 		},
 		Debuffs = {
 			GetSpellInfo(115804), -- Mortal Wounds
 			GetSpellInfo(128531), -- Blackout Kick
 			GetSpellInfo(107428), -- Rising Sun Kick
-			(GetSpellInfo(115180)), -- Dizzying Haze --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(115180)), -- Dizzying Haze
 		},
 		Misc = {
 			GetSpellInfo(116095), -- Disable
 			GetSpellInfo(119381), -- Leg Sweep
-			(GetSpellInfo(115078)), -- Paralysis --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-		}
+			(GetSpellInfo(115078)), -- Paralysis
+		},
 	}
 end

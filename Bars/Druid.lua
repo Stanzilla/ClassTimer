@@ -12,9 +12,9 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(8936), -- Regrowth
 			GetSpellInfo(100977), -- Harmony
 			GetSpellInfo(158792), -- Pulverize
-			GetSpellInfo(155777), -- Rejuv (Germination)
+			GetSpellInfo(155777), -- Rejuvenation (Germination)
 			GetSpellInfo(191034), -- Starfall
-			(GetSpellInfo(774)), -- Rejuvenation --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(774)), -- Rejuvenation
 		},
 		DOTs = {
 			GetSpellInfo(339), -- Entangling Roots
@@ -22,7 +22,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(164815), -- Sunfire
 			GetSpellInfo(115798), -- Weakened Blows
 			GetSpellInfo(202347), -- Stellar Flare
-			(GetSpellInfo(164812)), -- Moonfire --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(164812)), -- Moonfire
 		},
 		Feral = {
 			GetSpellInfo(50322), --Survival Instincts
@@ -37,7 +37,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(62606), -- Savage Defense
 			GetSpellInfo(1822), -- Rake
 			GetSpellInfo(1079), -- Rip
-			(GetSpellInfo(5217)), -- Tiger's Fury --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(5217)), -- Tiger's Fury
 		},
 		Talents = {
 			GetSpellInfo(50334), -- Berserk
@@ -54,12 +54,12 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(102543), -- Incarnation: King of the Jungle
 			GetSpellInfo(102560), -- Incarnation: Chosen of Elune
 			GetSpellInfo(117679), -- Incarnation   (this is the one used for Tree of Life)
-			(GetSpellInfo(16689)), -- Nature's Grasp --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(16689)), -- Nature's Grasp
 		},
 		Misc = {
 			GetSpellInfo(33786), -- Cyclone
 			GetSpellInfo(770), -- Faerie Fire
-			(GetSpellInfo(2637)), -- Hibernate  --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-		}
+			(GetSpellInfo(2637)), -- Hibernate
+		},
 	}
 end

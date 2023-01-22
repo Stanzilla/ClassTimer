@@ -21,7 +21,7 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(12329), -- Meat Cleaver
 			GetSpellInfo(107574), -- Avatar
 			GetSpellInfo(12292), -- Bloodbath
-			(GetSpellInfo(871)), -- Shield Wall --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(871)), -- Shield Wall
 		},
 		DOTs = {
 			GetSpellInfo(86346), -- Colossus Smash
@@ -32,18 +32,18 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(64382), -- Shattering Throw
 			GetSpellInfo(772), -- Rend
 			GetSpellInfo(6552), -- Pummel
-			(GetSpellInfo(115798)), -- Weakened Blows --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(115798)), -- Weakened Blows
 		},
 		Stuns = {
 			GetSpellInfo(103828), -- Warbringer
 			GetSpellInfo(46968), -- Shockwave
 			GetSpellInfo(118000), -- Dragon Roar
-			(GetSpellInfo(12323)), -- Piercing Howl --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(12323)), -- Piercing Howl
 		},
 		Misc = {
 			GetSpellInfo(46924), --Bladestorm
 			GetSpellInfo(5246), -- Intimidating Shout
-			(GetSpellInfo(6572)), -- Revenge --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
-		}
+			(GetSpellInfo(6572)), -- Revenge
+		},
 	}
 end

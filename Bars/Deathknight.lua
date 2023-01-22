@@ -19,9 +19,8 @@ function ClassTimer:CreateTimers()
 			GetSpellInfo(55233), -- Vampiric Blood
 			GetSpellInfo(63560), -- Ghoul Frenzy (Pet)
 			GetSpellInfo(63560), -- Dark Transformation (Pet)
-			(GetSpellInfo(49222)), -- Bone Shield --Important: Double parentheses are necessary because the last item in a table contains all the values from the function call and we only want the first one.
+			(GetSpellInfo(49222)), -- Bone Shield
 		},
-
 		DOTs = {
 			GetSpellInfo(191587), -- Virulent Plague
 			GetSpellInfo(197147), -- Festering Wound
